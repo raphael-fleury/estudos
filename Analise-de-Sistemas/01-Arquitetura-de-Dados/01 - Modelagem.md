@@ -1,6 +1,7 @@
 # Modelagem
 
 Modelagem de dados é o processo de representar os dados de uma organização, seus significados, relacionamentos e regras de negócio. O modelo serve como referência para análise, desenvolvimento, integração e manutenção dos bancos de dados.
+
 ### Objetivos
 
 - Identificar quais informações precisam ser armazenadas.
@@ -195,6 +196,26 @@ CREATE INDEX idx_pedido_data_entrega ON PEDIDO(data_entrega);
 Essa alteração é simples do ponto de vista funcional, mas exige análise do impacto em relatórios, consultas e manutenção dos dados.
 
 ## 3. O modelo Relacional
+
+O modelo relacional é uma forma de organizar e gerenciar dados em um banco de dados relacional utilizando tabelas bidimensionais compostas por linhas e colunas, baseado na teoria dos conjuntos e na lógica de predicados.
+
+### Conceitos Principais
+
+- **Relação:** Uma tabela bidimensional que armazena os dados.
+- **Tupla:** Uma linha ou registro da tabela, representando uma ocorrência ou entidade específica.
+- **Atributo:** Uma coluna ou campo da tabela, representando uma característica da entidade.
+- **Domínio:** O conjunto de valores permitidos para um atributo (o tipo de dado)
+
+### Chaves e Restrições de Integridade
+- **Chave Primária (Primary Key):** Um atributo ou conjunto de atributos que identifica de forma única cada tupla em uma relação.
+- **Chave Estrangeira (Foreign Key):** Um atributo que faz referência à chave primária de outra tabela, garantindo a integridade referencial e conectando as informações.
+- **Atomicidade:** Cada valor em uma linha deve ser indivisível (valores atômicos).
+
+### Vantagens
+- **Integridade dos Dados:** Regras rígidas evitam dados órfãos ou duplicados.
+- **Conformidade ACID:** Garante atomicidade, consistência, isolamento e durabilidade nas transações.
+- **Linguagem Padrão:** Utiliza o SQL para consultas e manipulação eficiente.
+
 ## 4. Normalização das estruturas de dados
 ## 5. Integridade referencial
 ## 6. Metadados
