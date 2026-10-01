@@ -217,6 +217,41 @@ O modelo relacional é uma forma de organizar e gerenciar dados em um banco de d
 - **Linguagem Padrão:** Utiliza o SQL para consultas e manipulação eficiente.
 
 ## 4. Normalização das estruturas de dados
+
+A normalização de dados é um processo usado em bancos de dados relacionais para organizar tabelas, reduzir a duplicação de informações e evitar erros ao alterar, apagar ou inserir dados.
+
+### Conceitos
+
+#### Dependência Funcional
+
+É um relacionamento entre dois ou mais atributos, de forma que o valor de um atributo identifica o valor do outro atributo. 
+
+**Exemplo:** se nós sabemos qual o CPF de uma pessoa também vamos descobrir o nome. Nem sempre o inverso se aplica, como neste caso.
+
+#### Dependência Funcional Parcial
+
+Ocorre quando um atributo que não faz parte da chave primária depende apenas de uma parte de uma chave primária composta (formada por mais de uma coluna), e não dela inteira.
+
+**Exemplo:** Em uma tabela de notas de alunos com a chave primária composta por `(ID_Aluno, Cod_Disciplina)`, o atributo `Nome_Aluno` depende de `ID_Aluno`, mas não de `Cod_Disciplina`.
+
+#### Dependência Funcional Transitiva
+
+Ocorre quando um ou mais campos de uma entidade não são dependentes diretamente da chave primária, ou de parte dela, mas sim dependente de outro campo da tabela.
+
+**Exemplo:** Na tabela Funcionario há os campos `ID_Funcionario`, `ID_Cargo` e `Nome_Cargo`. A coluna Nome_Cargo depende somente da coluna ID_Cargo que não é a coluna primária.
+
+#### Atributos Multivalorados
+
+São atributos que podem conter mais de um valor para um mesmo registro. 
+
+**Exemplo:** A entidade `Empregado` com o atributo `Telefone` (pode ter 1, 2 ou nenhum).
+
+#### Atributos Compostos
+
+É aquele que pode ser subdividido em partes menores (atributos simples ou atômicos), formados por uma junção de subpropriedades.
+
+**Exemplo:** O campo `Endereco` pode ser dividido em `Logradouro`, `Numero`, `Complemento`, etc.
+
 ## 5. Integridade referencial
 ## 6. Metadados
 ## 7. Modelagem dimensional
