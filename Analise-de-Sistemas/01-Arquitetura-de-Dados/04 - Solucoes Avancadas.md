@@ -43,6 +43,24 @@ Ocorre de forma direta entre bancos de dados relacionais ou NoSQL, sem a necessi
 - **Linked Servers / Stored Procedures:** Banco conversando diretamente com banco por meio de links de rede internos.
 
 ## 3. Banco de dados em memória
+
+Um banco de dados em memória (ou in-memory database) é um sistema de gerenciamento de dados que guarda todas as informações diretamente na memória RAM do computador, em vez de usar discos rígidos ou SSDs.
+
+### Principais Características
+
+- **Velocidade extrema:** Elimina a latência de leitura e escrita em discos, permitindo respostas em microssegundos.
+- **Menor uso de CPU:** Exige menos instruções do processador para recuperar as informações.
+- **Volatilidade e Persistência:** Como a RAM é volátil (perde os dados ao desligar), muitos sistemas usam mecanismos de backup em disco ou replicação para evitar a perda de informações.
+
+### Exemplos Populares
+
+- **Redis:** Muito usado como cache e armazenamento de estruturas em memória.
+- **Dragonfly:** Alternativa moderna de alto desempenho ao Redis.
+- **Memgraph:** Focado em processamento de dados em formato de grafos em tempo real.
+- **SQLite (modo em memória):** Utilizado frequentemente para testes rápidos ou dados temporários.
+
+Não deve ser utilizado quando o volume de dados for maior do que a RAM disponível ou quando os dados não possam ser perdidos em caso de queda de energia, reinicialização ou falha no servidor. É usado com frequência para cache ou bancos de teste.
+
 ## 4. Qualidade de dados e gestão de dados mestres e de referência
 ## 5. Data Lakes e Soluções para Big Data
 ## 6. Diferenciação entre bancos relacionais, multidimensionais, documentos e grafos
