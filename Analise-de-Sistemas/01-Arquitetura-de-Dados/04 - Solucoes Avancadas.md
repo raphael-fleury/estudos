@@ -64,3 +64,36 @@ Não deve ser utilizado quando o volume de dados for maior do que a RAM disponí
 ## 4. Qualidade de dados e gestão de dados mestres e de referência
 ## 5. Data Lakes e Soluções para Big Data
 ## 6. Diferenciação entre bancos relacionais, multidimensionais, documentos e grafos
+
+### Bancos de Dados Relacionais
+
+- **Estrutura:** Organizados em tabelas (linhas e colunas), com esquemas rígidos e definidos (DDL).
+- **Relacionamentos:** Feitos através de chaves primárias e estrangeiras (Foreign Keys), combinando dados entre tabelas por meio de operações de JOIN.
+- **Linguagem:** SQL (Structured Query Language).
+- **Propriedades:** Foco forte em transações ACID (Atomicidade, Consistência, Isolamento, Durabilidade), ideais para integridade de dados.
+- **Casos de uso:** Sistemas bancários, ERPs, e-commerces e transações financeiras.
+- **Exemplos:** PostgreSQL, MySQL, Oracle, SQL Server.
+
+### Bancos de Dados Multidimensionais
+
+- Estrutura: Organizados conceitualmente em cubos de dados (com três ou mais dimensões: X, Y, Z), otimizados para visualização sob múltiplos ângulos de análise.
+- Relacionamentos: Baseados em tabelas fato (métricas numéricas) e tabelas dimensão (contextos como tempo, produto, local) — comumente modelados em Star Schema (esquema estrela).
+- Foco: Voltados para OLAP (Online Analytical Processing), Business Intelligence (BI) e Data Warehouses.
+- Características: Excelente desempenho em agregações complexas e consultas analíticas rápidas, mas com estrutura rígida de cubo (difícil de alterar após construída).
+- Exemplos: Microsoft SSAS (SQL Server Analysis Services), Oracle Essbase, IBM Planning Analytics (TM1).
+
+### Bancos de Dados de Documentos (NoSQL)
+
+- **Estrutura:** Armazenam dados em formatos semiestruturados como JSON, BSON ou XML, dispensando um esquema fixo (schema-less / esquema flexível).
+- **Relacionamentos:** Em vez de usar joins pesados, costumam aninhar dados relacionados (por exemplo, guardar um vetor de pedidos dentro do documento de um cliente).
+- **Foco:** Escalabilidade horizontal facilitada e alta velocidade de leitura/gravação para formatos flexíveis.
+- **Casos de uso:** Catálogos de produtos, gestão de conteúdo (CMS), perfis de usuários e APIs modernas.
+- **Exemplos:** MongoDB, Couchbase, Amazon DocumentDB.
+
+### Bancos de Dados de Grafos (NoSQL)
+
+- **Estrutura:** Baseados na teoria matemática dos grafos, utilizando nós (entidades como pessoas, contas ou produtos) e arestas (relações que conectam os nós).
+- **Relacionamentos:** Armazenados explicitamente e de forma nativa junto ao dado (o relacionamento é um objeto de primeira classe, não exigindo reconstrução via joins em tempo de consulta).
+- **Foco:** Consultas profundas e recursivas de conexões (ex: "amigos de amigos de amigos").
+- **Casos de uso:** Redes sociais, sistemas de recomendação, detecção de fraudes e grafos de conhecimento.
+- **Exemplos:** Neo4j, Amazon Neptune, ArangoDB (multimodelo).
