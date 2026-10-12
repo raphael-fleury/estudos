@@ -207,11 +207,13 @@ O modelo relacional é uma forma de organizar e gerenciar dados em um banco de d
 - **Domínio:** O conjunto de valores permitidos para um atributo (o tipo de dado)
 
 ### Chaves e Restrições de Integridade
+
 - **Chave Primária (Primary Key):** Um atributo ou conjunto de atributos que identifica de forma única cada tupla em uma relação.
 - **Chave Estrangeira (Foreign Key):** Um atributo que faz referência à chave primária de outra tabela, garantindo a integridade referencial e conectando as informações.
 - **Atomicidade:** Cada valor em uma linha deve ser indivisível (valores atômicos).
 
 ### Vantagens
+
 - **Integridade dos Dados:** Regras rígidas evitam dados órfãos ou duplicados.
 - **Conformidade ACID:** Garante atomicidade, consistência, isolamento e durabilidade nas transações.
 - **Linguagem Padrão:** Utiliza o SQL para consultas e manipulação eficiente.
@@ -238,7 +240,7 @@ Ocorre quando um atributo que não faz parte da chave primária depende apenas d
 
 Ocorre quando um ou mais campos de uma entidade não são dependentes diretamente da chave primária, ou de parte dela, mas sim dependente de outro campo da tabela.
 
-**Exemplo:** Na tabela Funcionario há os campos `ID_Funcionario`, `ID_Cargo` e `Nome_Cargo`. A coluna Nome_Cargo depende somente da coluna ID_Cargo que não é a coluna primária.
+**Exemplo:** Na tabela Funcionario há os campos `ID_Funcionario`, `ID_Cargo` e `Nome_Cargo`. A coluna `Nome_Cargo` depende somente da coluna `ID_Cargo` que não é a coluna primária.
 
 #### Atributos Multivalorados
 
@@ -253,7 +255,35 @@ São atributos que podem conter mais de um valor para um mesmo registro.
 **Exemplo:** O campo `Endereco` pode ser dividido em `Logradouro`, `Numero`, `Complemento`, etc.
 
 ## 5. Integridade referencial
+
+A integridade referencial é uma regra de banco de dados que garante que as ligações entre tabelas permaneçam exatas e consistentes.
+
+### Como funciona
+
+- **Chaves Estrangeiras (Foreign Key):** É imposta quando uma coluna em uma tabela aponta para a chave primária de outra tabela.
+- **Validade do vínculo:** O banco de dados exige que qualquer valor inserido na chave estrangeira exista de fato na tabela de origem (ou seja nulo, se permitido).
+- **Evita registros órfãos:** Impede que uma tabela tenha dados vinculados a algo que não existe (por exemplo, um pedido associado a um cliente que foi deletado ou nunca existiu).
+
+### Ações em atualizações e exclusões
+
+Quando você tenta apagar ou alterar um registro "pai" que está sendo referenciado, o banco pode usar regras como:
+- `RESTRICT / NO ACTION`: Bloqueia a exclusão ou alteração se houver registros dependentes.
+- `CASCADE`: Apaga ou atualiza automaticamente todos os registros filhos vinculados.
+- `SET NULL`: Define o valor da chave estrangeira na tabela filha como NULL
+
 ## 6. Metadados
+
+Metadados são dados que descrevem outros dados, ou seja, informações que explicam a estrutura, a organização e as características dos objetos armazenados em um sistema.
+
+
+Em um banco de dados, eles incluem:
+
+- **Estrutura das tabelas:** Nome das tabelas, nomes das colunas e a ordem em que aparecem.
+- **Tipos de dados:** Se uma coluna armazena texto (`VARCHAR`), números inteiros (`INT`), datas ou booleanos.
+- **Restrições (Constraints):** Chaves primárias (*Primary Keys*), chaves estrangeiras (*Foreign Keys*), regras de unicidade e campos obrigatórios (`NOT NULL`).
+- **Índices e visões:** Onde os índices estão localizados e como as consultas são otimizadas.
+- **Informações administrativas:** Data de criação, dono do objeto, permissões de acesso e espaço em disco ocupado
+
 ## 7. Modelagem dimensional
 ## 8. Avaliação de modelos de dados
 ## 9. Técnicas de engenharia reversa para criação e atualização de modelos de dados
