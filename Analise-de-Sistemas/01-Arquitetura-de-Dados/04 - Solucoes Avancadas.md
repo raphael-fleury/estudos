@@ -63,6 +63,36 @@ Não deve ser utilizado quando o volume de dados for maior do que a RAM disponí
 
 ## 4. Qualidade de dados e gestão de dados mestres e de referência
 ## 5. Data Lakes e Soluções para Big Data
+
+Um **data lake** é um repositório centralizado que armazena grandes volumes de dados brutos em seu formato nativo. Pode receber dados estruturados, semiestruturados ou não estruturados, sem exigir que um esquema seja definido antes da gravação.
+
+### Principais características
+
+- **Schema-on-read:** a estrutura é aplicada quando os dados são lidos e analisados, e não necessariamente quando são gravados.
+- **Baixo custo e alta escalabilidade:** costuma utilizar armazenamento de objetos em nuvem ou infraestruturas distribuídas, permitindo lidar com grandes volumes de dados.
+- **Flexibilidade:** pode armazenar arquivos de texto, JSON e logs, além de vídeos, áudios e dados de sensores de Internet das Coisas (IoT).
+- **Governança como requisito:** sem catalogação, controle de acesso e regras de qualidade, o repositório pode se tornar um *data swamp* — um conjunto desorganizado de dados cuja origem e confiabilidade são difíceis de determinar.
+
+### Soluções e tecnologias de destaque
+
+#### Armazenamento em nuvem
+
+- **Amazon S3**, na AWS.
+- **Google Cloud Storage**, no Google Cloud Platform (GCP).
+- **Azure Blob Storage** e **Azure Data Lake Storage**, na Microsoft Azure.
+
+#### Processamento, ingestão e orquestração
+
+- **Apache Spark** e **Apache Hadoop:** processamento distribuído de grandes volumes de dados.
+- **Apache Kafka:** ingestão e transmissão de dados em tempo real.
+- **Apache Airflow:** orquestração e acompanhamento de pipelines de dados.
+
+#### Plataformas integradas e lakehouse
+
+- **Databricks:** plataforma que combina recursos de data lake com transações ACID por meio do Delta Lake.
+- **Cloudian:** solução corporativa de armazenamento de dados em data lakes.
+- **Data Lake do Ministério da Justiça e Segurança Pública:** iniciativa pública para integração e análise de dados relacionados à segurança pública.
+
 ## 6. Diferenciação entre bancos relacionais, multidimensionais, documentos e grafos
 
 ### Bancos de Dados Relacionais
