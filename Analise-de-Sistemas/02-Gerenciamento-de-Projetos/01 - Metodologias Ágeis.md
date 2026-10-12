@@ -41,5 +41,48 @@ O **Kanban** é um método visual de gerenciamento de fluxo de trabalho, criado 
 - **Limite de WIP (*Work in Progress*):** define o número máximo de tarefas que podem ser realizadas ao mesmo tempo, ajudando a manter o foco e evitar gargalos.
 - **Fluxo contínuo:** ao contrário de métodos organizados em ciclos fechados, como o Scrum, o Kanban permite priorizar e adicionar demandas conforme elas surgem.
 
-## 3. Gestão de projeto versus gestão de produto
-## 4. Impulso de práticas ágeis em escala, gestão de portfólio alinhada à estratégia de negócios e realização de entregas incrementais utilizando a metodologia SAFe
+## 3. Gestão de projeto
+
+A **gestão de projetos** é a aplicação de conhecimentos, habilidades, ferramentas e técnicas para planejar, executar, monitorar e concluir um conjunto de atividades com início e fim definidos. Seu objetivo é alcançar metas respeitando restrições de tempo, custo e escopo.
+
+### Grupos de processos principais
+
+- **Iniciação:** definição dos objetivos e da viabilidade do projeto, além da identificação das partes interessadas (*stakeholders*).
+- **Planejamento:** detalhamento do cronograma, orçamento, escopo, recursos e riscos.
+- **Execução:** realização das tarefas planejadas para produzir as entregas do projeto.
+- **Monitoramento e controle:** acompanhamento do desempenho e aplicação de ajustes quando necessário para corrigir desvios.
+- **Encerramento:** entrega final aos *stakeholders*, avaliação dos resultados e fechamento formal do projeto.
+
+### Elementos fundamentais
+
+- **Escopo:** o que será entregue pelo projeto.
+- **Cronograma:** duração e sequência das etapas de execução.
+- **Recursos:** custos, materiais e equipe envolvidos.
+
+### Abordagens e metodologias
+
+- **Tradicional ou preditiva (cascata ou *waterfall*):** escopo definido e planejamento detalhado desde o início.
+- **Ágil (Scrum ou Kanban):** entregas em ciclos curtos, com maior flexibilidade para incorporar mudanças.
+- **Híbrida:** combinação de elementos preditivos e ágeis conforme as necessidades do projeto.
+
+### Ferramentas populares
+
+- **Quadros visuais e softwares de gestão:** Trello, Asana, Jira, Monday e Microsoft Project.
+- **Diagramas e gráficos:** gráfico de Gantt e WBS (*Work Breakdown Structure*, ou Estrutura Analítica do Projeto).
+
+## 4. Gestão de produto
+
+A **gestão de produtos** é uma prática estratégica que orienta todo o ciclo de vida de um produto — da pesquisa e ideação ao lançamento, às melhorias contínuas e à descontinuação — alinhando objetivos de negócio, tecnologia e experiência do usuário (UX).
+
+### O que faz um gestor de produto (*Product Manager*)
+
+- **Ponte estratégica:** conecta as necessidades dos clientes às metas financeiras da empresa e ao trabalho da equipe de desenvolvimento de tecnologia.
+- **Visão e *roadmap*:** define o plano estratégico e o mapa de evolução do produto, priorizando funcionalidades que geram valor.
+- **Foco no cliente:** coleta feedback do mercado, estuda personas e orienta o produto para resolver as necessidades reais dos usuários.
+
+### Diferença entre gestão de produto e gestão de projetos
+
+- **Gestão de projetos:** concentra-se em prazos, cronogramas, custos e controle de tarefas para entregar um escopo definido dentro do período previsto.
+- **Gestão de produto:** concentra-se no sucesso contínuo, em métricas de valor — como retenção e receita —, na experiência do usuário e na evolução do produto ao longo do tempo.
+
+## 5. Impulso de práticas ágeis em escala, gestão de portfólio alinhada à estratégia de negócios e realização de entregas incrementais utilizando a metodologia SAFe
