@@ -62,6 +62,16 @@ Um banco de dados em memória (ou in-memory database) é um sistema de gerenciam
 Não deve ser utilizado quando o volume de dados for maior do que a RAM disponível ou quando os dados não possam ser perdidos em caso de queda de energia, reinicialização ou falha no servidor. É usado com frequência para cache ou bancos de teste.
 
 ## 4. Qualidade de dados e gestão de dados mestres e de referência
+
+- **Dados Mestres (*Master Data*):** informações essenciais, relativamente estáveis e únicas, que descrevem os principais objetos de um negócio: quem, o quê e onde.
+	- **Exemplos:** clientes, produtos, fornecedores, colaboradores e contas contábeis.
+	- **Objetivo:** criar uma única fonte da verdade (*golden record*), compartilhada pelos sistemas da empresa, como ERP e CRM.
+- **Dados de Referência (*Reference Data*):** conjunto específico de dados usado para classificar ou categorizar outros dados na organização.
+	- **Exemplos:** códigos postais, moedas, unidades de medida, fusos horários e tabelas de países e estados.
+	- **Objetivo:** padronizar valores e garantir que diferentes sistemas falem a mesma língua.
+
+
+
 ## 5. Data Lakes e Soluções para Big Data
 
 Um **data lake** é um repositório centralizado que armazena grandes volumes de dados brutos em seu formato nativo. Pode receber dados estruturados, semiestruturados ou não estruturados, sem exigir que um esquema seja definido antes da gravação.
