@@ -85,4 +85,40 @@ A **gestão de produtos** é uma prática estratégica que orienta todo o ciclo 
 - **Gestão de projetos:** concentra-se em prazos, cronogramas, custos e controle de tarefas para entregar um escopo definido dentro do período previsto.
 - **Gestão de produto:** concentra-se no sucesso contínuo, em métricas de valor — como retenção e receita —, na experiência do usuário e na evolução do produto ao longo do tempo.
 
-## 5. Impulso de práticas ágeis em escala, gestão de portfólio alinhada à estratégia de negócios e realização de entregas incrementais utilizando a metodologia SAFe
+## 5. Metodologia SAFe
+
+O **Scaled Agile Framework (SAFe)** é um framework usado para ampliar a agilidade ao nível organizacional. Ele conecta a estratégia de negócios à execução diária, ajudando grandes empresas a entregar valor de forma rápida, previsível e consistente.
+
+### Impulso de práticas ágeis em escala
+
+À medida que uma organização cresce, coordenar várias equipes Scrum ou Kanban se torna um desafio. O SAFe organiza essas equipes em redes chamadas **Agile Release Trains (ARTs)**.
+
+- **Agile Release Train (ART):** equipe de equipes, geralmente com 50 a 125 pessoas, que compartilha uma missão de negócio. O ART planeja, executa e entrega valor de forma sincronizada.
+- **Release Train Engineer (RTE):** facilita os processos do ART e remove impedimentos em escala, em um papel semelhante ao de um Scrum Master para o trem.
+- **Product Management:** define o *backlog* de funcionalidades (*Features*) e a visão do que o ART deve construir.
+- **System Architect:** orienta a arquitetura tecnológica para atender às necessidades atuais e futuras do negócio.
+
+### Gestão de portfólio alinhada à estratégia de negócios
+
+O **Lean Portfolio Management (LPM)** ajuda a alinhar o trabalho das equipes aos objetivos estratégicos, para que a agilidade seja aplicada a iniciativas que gerem valor para o negócio. Entre as práticas relacionadas estão:
+
+- **Financiamento de fluxos de valor (*Value Streams*):** em vez de financiar apenas projetos temporários com orçamentos rígidos, os recursos são direcionados a fluxos de valor de longo prazo, permitindo ajustes de prioridade com menos burocracia orçamentária.
+- **Epic Kanban e guardrails:** grandes iniciativas (*Epics*) passam por um fluxo visual de análise antes do desenvolvimento. Os *guardrails* definem limites e orientações para o uso dos recursos de cada fluxo de valor.
+- **Objetivos e Resultados-Chave (OKRs):** traduzem a estratégia da organização em metas mensuráveis que orientam o trabalho das equipes.
+
+### Realização de entregas incrementais utilizando a metodologia SAFe
+
+A previsibilidade e a entrega contínua são apoiadas por ciclos de trabalho fixos e uma cadência compartilhada.
+
+- **Planejamento do Incremento do Programa (*Program Increment Planning* ou PI Planning):** evento central em que o ART se reúne, presencial ou virtualmente, geralmente por dois dias, para planejar as próximas 8 a 12 semanas. Durante o planejamento, as equipes identificam dependências e riscos.
+- **Desenvolver com cadência e liberar sob demanda:** as equipes trabalham em iterações fixas, geralmente de duas semanas, enquanto o negócio pode liberar funcionalidades quando houver necessidade e estiverem prontas.
+- **Pipeline de Entrega Contínua (CDP):** conjunto de práticas e automações de DevOps que apoiam a exploração, integração, implantação e liberação contínuas, reduzindo atritos no processo de entrega.
+
+### Benefícios do SAFe
+
+| Área | Abordagem SAFe | Resultado esperado |
+|---|---|---|
+| **Alinhamento** | Planejamento do Incremento do Programa (PI Planning) | Organização alinhada em torno das prioridades a cada incremento. |
+| **Execução** | Agile Release Trains (ARTs) | Sincronização e colaboração entre equipes de tecnologia e negócio. |
+| **Estratégia** | Lean Portfolio Management | Recursos direcionados a fluxos de valor, com flexibilidade para ajustar prioridades. |
+| **Qualidade** | DevOps e qualidade incorporada | Entregas mais rápidas e redução de falhas em produção. |
