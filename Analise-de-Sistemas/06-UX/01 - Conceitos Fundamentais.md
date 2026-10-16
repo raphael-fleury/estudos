@@ -45,6 +45,31 @@ As pessoas mais afetadas nesse cenário são aquelas com dislexia e autismo, ou 
 - Pensar na hierarquia de fontes e conteúdos também é uma boa prática para facilitar a navegação de todas as pessoas.
 - **Evitar frases e textos complexos.** Faça o exercício de pensar se pessoas semi-analfabetas conseguiriam entender a mensagem, ou se quando o conteúdo for traduzido para Libras, ele ainda fará sentido?
 
+#### Diretrizes de Acessibilidade de Conteúdo da Web (WCAG)
+
+São um conjunto de recomendações internacionais desenvolvidas pela Web Accessibility Initiative (WAI) do W3C (World Wide Web Consortium) para tornar a internet mais acessível a pessoas com deficiência.
+
+##### Os 4 Princípios Básicos (POUR)
+
+O conteúdo da web deve ser construído com base em quatro pilares fundamentais:
+- **Perceptível:** As informações e os componentes da interface devem ser apresentados aos usuários em formas que eles consigam perceber (como textos alternativos para imagens, legendas em vídeos e contraste adequado de cores).
+- **Operável:** Os componentes da interface e a navegação devem ser operáveis por diferentes meios, garantindo que tudo possa ser feito apenas pelo teclado, sem depender exclusivamente do mouse.
+- **Compreensível:** As informações e a operação da interface devem ser fáceis de entender, com linguagem clara, previsibilidade de navegação e auxílio na correção de erros em formulários.
+- **Robuoso:** O conteúdo deve ser confiável o suficiente para ser interpretado de forma segura por uma ampla variedade de agentes de usuário, incluindo tecnologias assistivas (como leitores de tela).
+
+##### Níveis de Conformidade
+
+As diretrizes são divididas em três níveis de exigência que medem o grau de acessibilidade de uma página ou aplicação:
+- **Nível A (Básico):** Representa o patamar mínimo de acessibilidade que um site precisa atingir para evitar que certas barreiras impeçam totalmente o uso.
+- **Nível AA (Médio/Recomendado):** É o padrão mais adotado globalmente (e exigido pela maioria das leis de inclusão), resolvendo as principais barreiras para a maioria das pessoas com deficiência.
+- **Nível AAA (Avançado):** O nível máximo de rigor em acessibilidade, voltado para projetos específicos que buscam a máxima inclusão possível.
+
+##### Versões Principais
+
+- **WCAG 2.0:** Publicada em dezembro de 2008 e consolidada como norma internacional ISO/IEC 40500.
+- **WCAG 2.1:** Adicionou critérios voltados para dispositivos móveis, baixa visão e deficiências cognitivas.
+- **WCAG 2.2:** Tornou-se Recomendação oficial do W3C em outubro de 2023, refinando a navegação e a usabilidade.
+
 ## 2. Histórias do usuário
 ## 3. Desenho e planejamento de interação em aplicações web
 ## 4. Projeto centrado no usuário de software
