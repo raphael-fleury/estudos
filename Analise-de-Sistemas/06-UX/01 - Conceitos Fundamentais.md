@@ -69,6 +69,17 @@ As diretrizes são divididas em três níveis de exigência que medem o grau de 
 - **WCAG 2.2:** Tornou-se Recomendação oficial do W3C em outubro de 2023, refinando a navegação e a usabilidade.
 
 ## 2. Usabilidade
+
+Avalia o quão simples, clara e eficiente é a interação de uma pessoa com um sistema, produto ou serviço.
+
+### Componentes Principais
+
+- **Facilidade de aprendizado:** Quão rápido um usuário realiza tarefas básicas no primeiro contato com o design.
+- **Eficiência:** Com que rapidez os usuários conseguem executar as tarefas após aprenderem a usar o sistema.
+- **Memorabilidade:** Com que facilidade os usuários recuperam a proficiência ao retornar ao produto após um tempo sem utilizá-lo.
+- **Erros:** Quantos erros os usuários cometem, qual a gravidade deles e quão fácil é se recuperar.
+- **Satisfação:** O quão agradável é utilizar o design e qual o nível de engajamento gerado.
+
 ## 3. Histórias do usuário
 ## 4. Desenho e planejamento de interação em aplicações web
 ## 5. Projeto centrado no usuário de software
