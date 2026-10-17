@@ -94,3 +94,26 @@ Embora não seja um processo linear (permitindo idas e vindas e iterações cons
 - **Foco no valor real:** Cria soluções que as pessoas realmente desejam usar, em vez de empurrar produtos prontos para o mercado
 
 ## 7. Análise de personas (papéis, perfis etc.) de usuários de software
+
+A análise de personas em software é a criação de perfis semi-fictícios baseados em dados reais que representam os diferentes tipos de usuários, papéis e comportamentos em torno de um sistema.
+
+### Tipos de Personas no Contexto de Software
+
+- **Persona Primária:** É o foco principal do design; o software precisa ser construído primordialmente para satisfazer as necessidades dela.
+- **Persona Baseada em Papéis (Role-based):** Foca estritamente na função organizacional do usuário (ex: Contador, Administrador de TI, Operador de Caixa), priorizando fluxos de trabalho, permissões e metas corporativas.
+- **Persona Secundária/Terciária:** Usuários que interagem com o sistema de forma periférica ou esporádica e cujas necessidades não devem atrapalhar a persona primária.
+- **Buyer Persona (Comprador):** Quem toma a decisão de compra ou assina o contrato do software, mas que nem sempre é o usuário final que mexe na interface diariamente.
+
+### Elementos Essenciais de uma Persona
+
+- **Dados Demográficos e Contextuais:** Cargo, nível de conhecimento técnico, ferramentas que já utiliza e o ambiente de trabalho.
+- **Objetivos e Metas:** O que o usuário precisa realizar de concreto usando o software.
+- **Dores e Frustrações (Pain Points):** O que o irrita nos sistemas atuais, gargalos de tempo ou dificuldades de usabilidade.
+- **Padrões de Comportamento:** Como ele toma decisões, se prefere atalhos de teclado ou menus visuais, se é apressado ou cauteloso.
+
+### Passos para Construir as Personas
+
+1. **Pesquisa com Usuários:** Realize entrevistas, observe o uso real (shadowing), aplique formulários e analise dados quantitativos de uso.
+2. **Identificação de Variáveis:** Agrupe os entrevistados por comportamentos semelhantes, nível de habilidade e frequência de uso (evitando focar apenas em achismos).
+3. **Mapeamento e Síntese:** Monte o perfil com nome fictício, foto ilustrativa, frase resumo e contexto realista.
+4. **Validação com a Equipe:** Compartilhe com desenvolvedores, designers e produto para alinhar o escopo e evitar excesso de personas
