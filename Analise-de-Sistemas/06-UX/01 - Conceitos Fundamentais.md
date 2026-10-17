@@ -133,3 +133,5 @@ Para planear, desenhar e testar a interação, o mercado utiliza principalmente:
 - **Testes de Utilização:** Maze, Hotjar, UserTesting.
 
 ## 5. Projeto centrado no usuário de software
+
+O Projeto Centrado no Usuário (ou Design Centrado no Usuário - DCU / UCD) é uma abordagem de desenvolvimento de software que coloca as necessidades, limitações, comportamentos e o contexto real das pessoas no centro de todas as decisões do projeto.
