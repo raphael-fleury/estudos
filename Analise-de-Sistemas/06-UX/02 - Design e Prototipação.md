@@ -12,6 +12,31 @@ O Storytelling com dados é a prática de combinar números brutos, design visua
 
 ## 2. Organização e apresentação de dados em relatórios e dashboards
 
+A organização e apresentação de dados em relatórios e dashboards exigem clareza visual, foco no público-alvo e o uso de métricas que respondam a perguntas específicas do negócio.
+
+### Diferença entre Relatório e Dashboard
+
+- Relatório: Documento aprofundado com dados históricos, textos explicativos e tabelas detalhadas, ideal para análises minuciosas e tomadores de decisão. Funciona como uma "fotografia" estática de um período.
+- Dashboard (Painel Digital): Interface visual consolidada em uma única tela que reúne KPIs (indicadores-chave de desempenho) dinâmicos e interativos para acompanhamento em tempo real.
+
+### Princípios de Organização de Dados
+
+- **Qualidade da base:** Garanta que os dados brutos estejam limpos, padronizados e confiáveis antes de gerar qualquer visualização.
+- **Definição de objetivos:** Cada gráfico ou indicador deve responder a uma pergunta de negócio específica e não apenas preencher espaço.
+- **Público-alvo:** Ajuste o nível de profundidade (operacional, tático ou estratégico) conforme quem vai ler o material.
+
+### Escolha Correta de Gráficos
+
+- **Colunas ou Barras:** Ideais para comparações diretas e rankings de valores.
+- **Linhas:** Indicadas para mostrar evolução temporal e tendências ao longo do tempo.
+- **Rosca ou Pizza:** Utilizadas para representar participação ou proporção de um todo.
+- **Formatação condicional:** Uso de barras de dados ou cores de alerta para destacar rapidamente pontos críticos ou metas atingidas.
+
+### Ferramentas Populares
+
+- **Planilhas:** O Microsoft Excel permite criar tabelas dinâmicas e painéis interativos de forma rápida.
+- **Business Intelligence (BI):** Plataformas como Power BI, Looker Studio ou Grafana centralizam grandes volumes de dados e automatizam atualizações
+
 ## 3. Interoperabilidade de interfaces web entre diversos navegadores
 
 É a capacidade de um site ou aplicativo funcionar e ser exibido de maneira consistente em diferentes navegadores (como Google Chrome, Microsoft Edge, Mozilla Firefox e Apple Safari).
