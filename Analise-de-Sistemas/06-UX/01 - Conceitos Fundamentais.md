@@ -135,3 +135,23 @@ Para planear, desenhar e testar a interação, o mercado utiliza principalmente:
 ## 5. Projeto centrado no usuário de software
 
 O Projeto Centrado no Usuário (ou Design Centrado no Usuário - DCU / UCD) é uma abordagem de desenvolvimento de software que coloca as necessidades, limitações, comportamentos e o contexto real das pessoas no centro de todas as decisões do projeto.
+
+Ao invés de criar o sistema com base apenas em suposições técnicas ou na opinião dos desenvolvedores, a equipe constrói a solução fundamentada na realidade de quem vai usá-la.
+
+A norma **ISO 9241-210:2019** (adotada no Brasil como ABNT NBR ISO 9241-210) estabelece os princípios e as atividades do Projeto Centrado no Ser Humano (HCD – Human-Centred Design) para sistemas interativos de hardware e software ao longo de todo o ciclo de vida.
+
+### Os 6 Princípios do Design Centrado no Ser Humano
+
+1. **Compreensão explícita:** O projeto baseia-se em um entendimento profundo dos usuários, de suas tarefas e dos ambientes de uso.
+2. **Envolvimento ativo:** Os usuários participam de forma ativa em todas as etapas do desenvolvimento.
+3. **Avaliação iterativa:** O design é impulsionado e refinado por avaliações centradas no usuário.
+4. **Processo iterativo:** As soluções passam por ciclos contínuos de melhoria até atenderem aos requisitos.
+5. **Experiência completa:** O projeto aborda a experiência do usuário em sua totalidade (todas as interações com o produto ou serviço).
+6. **Equipe multidisciplinar:** O trabalho exige habilidades e perspectivas diversas (design, desenvolvimento, pesquisa e gestão).
+
+### Atividades Fundamentais do Ciclo de Vida
+
+- **Entender e especificar o contexto de uso:** Identificar quem usa o sistema, para quê e em quais condições.
+- **Especificar os requisitos do usuário:** Listar as metas e necessidades que o sistema deve cumprir.
+- **Produzir soluções de design:** Criar desde conceitos iniciais até protótipos avançados.
+- **Avaliar os designs:** Testar as soluções com usuários reais ou inspeções de especialistas comparando com os requisitos definidos.
