@@ -98,4 +98,38 @@ São descrições curtas e simples de uma funcionalidade contada sob a perspecti
 **Validação pelo método INVEST:** Garantia de que a história seja **I**ndependente, **N**egociável, **V**aliosa, **E**stimável, **S**mall (pequena) e **T**estável.
 
 ## 4. Desenho e planejamento de interação em aplicações web
+
+### Etapas do Planeamento de Interação
+
+O sucesso de uma aplicação web depende de um planeamento que antecede a programação. Este processo divide-se geralmente em quatro fases:
+- **Investigação e Definição de Personas:** Compreender quem é o utilizador final, quais são as suas dores, o seu nível de literacia digital e o que ele tenta alcançar na aplicação.
+- **Mapeamento da Jornada do Utilizador:** Criar um mapa visual que ilustre todos os passos que o utilizador dá desde o momento em que entra na aplicação até concluir o seu objetivo (ex: fazer uma compra, emitir um relatório).
+- **Arquitetura de Informação:** Organizar e estruturar o conteúdo do site. Isto define os menus, a hierarquia das páginas e como a informação categorizada será acedida.
+- **Fluxogramas de Tarefas (User Flows):** Diagramas que mostram os caminhos lógicos que o utilizador pode seguir, incluindo caminhos alternativos e mensagens de erro (ex: o que acontece se a senha estiver errada).
+
+### Os 5 Pilares do Design de Interação (IxD)
+
+Segundo as boas práticas de UX/UI, a interação baseia-se em cinco dimensões fundamentais:
+- **1D: Palavras (Texto):** Os botões, rótulos e mensagens devem ser claros, diretos e fáceis de entender. Evite jargões técnicos complexos.
+- **2D: Representações Visuais:** Elementos gráficos como ícones, tipografia, diagramas e imagens que ajudam a guiar o utilizador sem o sobrecarregar.
+- **3D: Objetos Físicos ou Espaço:** Refere-se ao dispositivo onde a aplicação corre (computador, tablet ou smartphone). O design deve adaptar-se ao contexto físico do utilizador (ex: cliques com o mouse vs. toques na tela).
+- **4D: Tempo:** Refere-se a interações que mudam com o tempo, tais como animações, transições de páginas, vídeos e barras de progresso. Ajudam o utilizador a perceber que algo está a acontecer.
+- **5D: Comportamento:** Como o utilizador age com base nas dimensões anteriores e como a aplicação responde (o feedback do sistema).
+
+### Boas Práticas para Aplicações Web
+
+Ao desenhar a interface, considere estas regras de ouro:
+- **Consistência:** Utilize os mesmos padrões visuais (cores, formatos de botões, posições de menus) em toda a aplicação para reduzir a curva de aprendizagem.
+- **Feedback Imediato:** O utilizador nunca deve ficar na dúvida se um botão funcionou. Mostre spinners de carregamento, estados de "clicado" ou mensagens de sucesso/erro.
+- **Prevenção e Tolerância a Erros:** Desenhe formulários que validem os dados em tempo real e ofereçam mensagens de ajuda claras. Se o utilizador errar, a aplicação deve ajudá-lo a recuperar facilmente (ex: botão "Desfazer").
+- **Acessibilidade (WCAG):** Garanta que a aplicação pode ser utilizada por pessoas com deficiências visuais, motoras ou cognitivas. Isto inclui bom contraste de cores, navegação por teclado e compatibilidade com leitores de ecrã.
+- **Design Responsivo:** A aplicação web deve funcionar perfeitamente em ecrãs de qualquer tamanho, reorganizando os elementos de forma lógica.
+
+### Ferramentas Recomendadas
+
+Para planear, desenhar e testar a interação, o mercado utiliza principalmente:
+- **Design e Prototipagem:** Figma, Adobe XD, Sketch.
+- **Fluxogramas e Mapas:** Miro, Whimsical, Lucidchart.
+- **Testes de Utilização:** Maze, Hotjar, UserTesting.
+
 ## 5. Projeto centrado no usuário de software
