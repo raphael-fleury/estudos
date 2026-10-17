@@ -48,5 +48,26 @@ O conceito baseia-se na metodologia ágil e no ciclo contínuo:
 **Exemplo prático:** Antes de criar um aplicativo complexo de entrega de comida com inteligência artificial, é possível validar a demanda inicial usando apenas um grupo simples no WhatsApp ou um site básico.
 
 ## 5. Prototipação
+
+A prototipação em UX é a criação de versões simuladas de uma interface, fluxo ou funcionalidade para validar hipóteses e testar a usabilidade com usuários antes do desenvolvimento final.
+
+### Níveis de Fidelidade dos Protótipos
+
+- **Baixa Fidelidade:** Esboços em papel ou wireframes simples. Servem para alinhar conceitos iniciais e a arquitetura da informação sem focar no visual.
+- **Média Fidelidade:** Telas digitais com interatividade básica (clique em botões e navegação entre fluxos), mas sem o design gráfico completo.
+- **Alta Fidelidade:** Simulações visuais muito próximas do produto final, incluindo cores tipográficas, componentes reais e micro-interações.
+
+### Principais Benefícios
+
+- **Validação Precoce:** Permite identificar erros de navegação e problemas de usabilidade antes de gastar recursos com programação.
+- **Redução de Custos:** Evita retrabalho caro na engenharia ao alinhar expectativas com stakeholders e desenvolvedores antecipadamente.
+- **Comunicação Clara:** Transforma ideias abstratas em algo tangível que a equipe técnica e os clientes conseguem testar na prática.
+
+### Ferramentas Mais Utilizadas
+
+- **Figma:** Líder de mercado para criação colaborativa de wireframes e protótipos interativos.
+- **UXPin:** Focado em protótipos construídos com componentes reais de código.
+- **Adobe XD:** Permite criar artboards, definir interações e gerar links de compartilhamento para testes.
+
 ## 6. Design thinking
 ## 7. Análise de personas (papéis, perfis etc.) de usuários de software
