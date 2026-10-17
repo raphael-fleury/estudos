@@ -70,4 +70,27 @@ A prototipação em UX é a criação de versões simuladas de uma interface, fl
 - **Adobe XD:** Permite criar artboards, definir interações e gerar links de compartilhamento para testes.
 
 ## 6. Design thinking
+
+### O que é
+
+É um modelo mental e prático que coloca as pessoas no centro do desenvolvimento de produtos, serviços ou processos. Ele equilibra três pilares fundamentais:
+- **Desejabilidade:** o que faz sentido e resolve a dor real das pessoas.
+- **Viabilidade financeira:** o que é sustentável para o negócio.
+- **Possibilidade tecnológica:** o que é viável de executar com a tecnologia disponível.
+
+### As Fases Principais
+
+Embora não seja um processo linear (permitindo idas e vindas e iterações constantes), ele geralmente se divide nas seguintes etapas:
+1. **Empatia (Imersão):** Entender profundamente os usuários, suas emoções, rotinas e necessidades por meio de entrevistas e observação.
+2. **Definição:** Analisar e sintetizar os dados coletados para delimitar com clareza o problema real que precisa ser resolvido.
+3. **Ideação:** Estimular a criatividade e gerar o maior número possível de ideias e alternativas (com técnicas como brainstorming).
+4. **Prototipagem:** Transformar as melhores ideias em modelos físicos, visuais ou digitais rápidos e de baixo custo.
+5. **Teste (Validação):** Apresentar o protótipo aos usuários reais, colher feedback e ajustar a solução antes de implementá-la de vez
+
+### Pilares e Vantagens
+
+- **Colaboração:** Reúne equipes multidisciplinares (como marketing, engenharia e atendimento) para enriquecer o olhar sobre o problema.
+- **Experimentação:** Errar de forma rápida e barata no começo evita grandes prejuízos no lançamento final.
+- **Foco no valor real:** Cria soluções que as pessoas realmente desejam usar, em vez de empurrar produtos prontos para o mercado
+
 ## 7. Análise de personas (papéis, perfis etc.) de usuários de software
