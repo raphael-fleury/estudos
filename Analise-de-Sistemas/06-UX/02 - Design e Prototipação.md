@@ -29,6 +29,24 @@ O Storytelling com dados é a prática de combinar números brutos, design visua
 - **Progressive Enhancement (Aprimoramento Progressivo):** Garantir que a base do site funcione em qualquer navegador e adicionar recursos avançados apenas onde houver suporte
 
 ## 4. Mínimo Produto Viável (MVP)
+
+É a versão mais simples e funcional de um produto ou serviço, criada com o mínimo de recursos, tempo e esforço para testar uma ideia no mercado real.
+
+### Principais Objetivos
+
+- **Validar hipóteses:** Descobrir se o produto realmente resolve a dor ou a necessidade do cliente.
+- **Reduzir riscos e custos:** Evitar o desperdício de tempo e dinheiro no desenvolvimento de algo que o mercado não quer.
+- **Acelerar o aprendizado:** Coletar dados e feedback real dos primeiros usuários para guiar as próximas fases de melhoria.
+
+### Como Funciona o Ciclo (Lean Startup)
+
+O conceito baseia-se na metodologia ágil e no ciclo contínuo:
+1. **Construir:** Criar a versão mais enxuta capaz de entregar valor.
+2. **Medir:** Observar como os usuários reagem e usam a solução.
+3. **Aprender:** Decidir se deve continuar, ajustar o rumo (pivotar) ou abandonar a ideia.
+
+**Exemplo prático:** Antes de criar um aplicativo complexo de entrega de comida com inteligência artificial, é possível validar a demanda inicial usando apenas um grupo simples no WhatsApp ou um site básico.
+
 ## 5. Prototipação
 ## 6. Design thinking
 ## 7. Análise de personas (papéis, perfis etc.) de usuários de software
