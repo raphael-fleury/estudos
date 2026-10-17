@@ -81,5 +81,21 @@ Avalia o quão simples, clara e eficiente é a interação de uma pessoa com um 
 - **Satisfação:** O quão agradável é utilizar o design e qual o nível de engajamento gerado.
 
 ## 3. Histórias do usuário
+
+São descrições curtas e simples de uma funcionalidade contada sob a perspectiva de quem vai usá-la, focando na necessidade real e no valor gerado.
+
+### Estrutura Padrão
+
+- **Formato:** "Como [persona], eu quero [ação/funcionalidade] para que [benefício/valor]".
+- **Exemplo:** "Como cliente frequente, eu quero salvar meu cartão de crédito para que eu possa finalizar compras em um único clique."
+
+### Os 3 "C"s da História de Usuário
+
+- **Cartão (Card):** A descrição física ou digital resumida que serve como lembrete para uma conversa.
+- **Conversa (Conversation):** O diálogo entre designers, desenvolvedores e Product Owner (PO) para alinhar os detalhes da experiência.
+- **Confirmação (Confirmation):** Os critérios de aceitação (checklist de testes) que provam que a história foi concluída com sucesso.
+
+**Validação pelo método INVEST:** Garantia de que a história seja **I**ndependente, **N**egociável, **V**aliosa, **E**stimável, **S**mall (pequena) e **T**estável.
+
 ## 4. Desenho e planejamento de interação em aplicações web
 ## 5. Projeto centrado no usuário de software
