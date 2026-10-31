@@ -358,3 +358,37 @@ Podem ser observados indicadores como cobertura dos requisitos, quantidade de re
 Os critérios podem entrar em conflito. Por exemplo, maior normalização tende a reduzir redundância, enquanto uma desnormalização controlada pode melhorar determinadas consultas. A decisão deve registrar o motivo, os benefícios, os riscos e como o resultado será monitorado. Um modelo adequado equilibra correção, integridade, desempenho e facilidade de evolução, em vez de otimizar apenas um aspecto.
 
 ## 9. Técnicas de engenharia reversa para criação e atualização de modelos de dados
+
+A engenharia reversa em modelagem de dados é o processo de extrair informações de uma base de dados ou script existente para reconstruir seu modelo lógico, físico ou conceitual quando a documentação original está desatualizada ou ausente.
+
+### Fontes e técnicas
+
+- **Engenharia reversa do esquema:** extrair do catálogo do SGBD tabelas, colunas, tipos, chaves primárias e estrangeiras, restrições, índices, visões e outros objetos. Ferramentas CASE e recursos de engenharia reversa de clientes de banco de dados podem gerar diagramas a partir desses metadados.
+- **Análise de scripts e migrações:** examinar comandos DDL (`CREATE`, `ALTER`, `DROP`) e o histórico de migrações para reconstruir a evolução do esquema e identificar decisões que não aparecem no estado atual.
+- **Análise de código e consultas:** localizar SQL, mapeamentos objeto-relacional, procedimentos armazenados, relatórios e integrações para entender como as estruturas são utilizadas e quais dependências existem.
+- **Inspeção dos dados:** analisar amostras e estatísticas — como valores nulos, duplicidades, faixas e distribuição — para identificar padrões e possíveis inconsistências. Os dados ajudam a formular hipóteses, mas não substituem regras de negócio nem provam a semântica dos campos.
+- **Reconstrução do modelo conceitual:** entrevistar usuários e responsáveis pelo sistema para esclarecer o significado das entidades, as regras de negócio e os relacionamentos que não podem ser inferidos apenas do esquema.
+
+### Processo de trabalho
+
+1. **Definir escopo e obter acesso autorizado:** identificar bancos, esquemas, ambientes e objetos relevantes, evitando alterações no ambiente de produção durante a coleta.
+2. **Extrair e registrar os metadados:** obter a definição dos objetos e, quando necessário, as dependências entre eles. Preservar a origem e a versão das informações coletadas.
+3. **Gerar um modelo inicial:** importar o esquema para uma ferramenta de modelagem ou documentá-lo em diagramas e dicionário de dados. Conferir se objetos e restrições foram representados corretamente.
+4. **Complementar a semântica:** validar nomes, finalidades, cardinalidades, opcionalidade e regras com documentação, código e especialistas do domínio. Distinguir fatos observados de hipóteses ainda não confirmadas.
+5. **Comparar com o modelo existente:** identificar objetos ausentes ou divergentes, mudanças não documentadas e diferenças entre ambientes ou versões.
+6. **Planejar e validar a atualização:** propor alterações no modelo lógico e físico, avaliar impactos e produzir scripts de migração revisáveis. Testá-los em ambiente não produtivo, incluindo a preservação e a consistência dos dados.
+7. **Sincronizar a documentação:** atualizar diagramas, dicionário de dados e histórico de mudanças junto com a implementação aprovada.
+
+### Comparação de esquemas e controle de mudanças
+
+Ferramentas de comparação (*schema diff*) confrontam dois esquemas — por exemplo, desenvolvimento e produção ou duas versões do modelo — e apresentam diferenças como inclusão, remoção ou alteração de tabelas, colunas, chaves e índices. O resultado deve ser revisado antes de gerar ou executar DDL: uma diferença tecnicamente válida pode causar perda de dados, incompatibilidade com aplicações ou indisponibilidade.
+
+Para atualizações, é recomendável versionar as migrações, aplicá-las em ordem e definir procedimentos de validação e recuperação. Alterações incompatíveis podem exigir etapas intermediárias, como adicionar uma coluna, migrar os dados e só então remover a estrutura antiga. A estratégia depende do SGBD, do volume de dados e dos requisitos de disponibilidade.
+
+### Limitações e cuidados
+
+- A estrutura física revela restrições explícitas, mas nem sempre expressa todas as regras de negócio; algumas podem estar apenas no código ou nos processos.
+- Convenções de nomes, ausência de chaves estrangeiras e dados inconsistentes podem dificultar a identificação de relacionamentos.
+- O esquema atual mostra o estado presente, não necessariamente as razões das decisões anteriores; scripts e histórico de versões complementam essa visão.
+- A análise de dados deve respeitar controles de acesso, privacidade e minimização: utilizar dados anonimizados ou amostras apropriadas sempre que possível.
+- A engenharia reversa produz uma representação a ser validada, não uma confirmação automática de que o modelo original está correto ou completo.
