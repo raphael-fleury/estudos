@@ -285,5 +285,47 @@ Em um banco de dados, eles incluem:
 - **Informações administrativas:** Data de criação, dono do objeto, permissões de acesso e espaço em disco ocupado
 
 ## 7. Modelagem dimensional
+
+A modelagem dimensional é uma técnica de design de bases de dados utilizada principalmente em sistemas de Data Warehouse (DW) e Business Intelligence (BI). O seu principal objetivo é estruturar os dados de forma a otimizar a velocidade das consultas e facilitar a compreensão por parte dos utilizadores de negócio.
+
+Ao contrário da modelagem relacional tradicional (usada em sistemas OLTP para evitar a redundância de dados), a modelagem dimensional aceita a redundância (desnormalização) para maximizar a performance de leitura.
+
+### Estrutura base
+
+<img src="https://hermes.dio.me/articles/cover/6690eb40-5ec6-45a8-b657-da9c41b3ce7e.png" />
+
+#### Tabelas fato (Fact Tables)
+
+Contêm as métricas quantitativas ou medidas numéricas de um evento de negócio.
+
+- **O que armazena:** Valores que podem ser somados, calculados ou medidos (ex: quantidade vendida, valor de faturação, tempo de espera).
+- **Chaves:** Contém chaves estrangeiras (FK) que se ligam às tabelas de dimensão.
+- **Características:** Cresce muito rapidamente em volume (milhões de linhas).
+
+
+#### Tabelas de Dimensão (Dimension Tables)
+
+Contêm o contexto que envolve o evento de negócio. Respondem às perguntas de "Quem?, O quê?, Onde?, Quando?, Porquê?".
+- **O que armazena:** Atributos textuais e descritivos (ex: nome do cliente, categoria do produto, cidade da loja, data).
+- **Chaves:** Contém uma chave primária (geralmente uma Surrogate Key ou chave artificial) que se liga à tabela de factos.
+- **Características:** São tabelas mais largas (muitas colunas) e com menos linhas que as tabelas de factos.
+
+
+### Modelos de Arquitetura Mais Comuns
+
+#### Esquema em Estrela (Star Schema)
+
+É o modelo mais simples e utilizado. A tabela de factos fica no centro, rodeada diretamente pelas tabelas de dimensão.
+- **Vantagem:** Consultas muito rápidas (poucos JOINs) e estrutura fácil de entender.
+- **Desvantagem:** As dimensões são totalmente desnormalizadas, gerando duplicidade de dados textuais.
+
+#### Esquema em Floco de Neve (Snowflake Schema)
+
+É uma variação do Star Schema, onde as tabelas de dimensão são normalizadas (divididas em sub-tabelas).
+- **Vantagem:** Reduz a redundância e economiza espaço em disco.
+- **Desvantagem:** Consultas mais lentas e complexas devido ao maior número de JOINs.
+
+<img src="https://media.licdn.com/dms/image/v2/D4D22AQGPX3aR01uP3w/feedshare-shrink_800/B4DZoevdalIkAg-/0/1761452361168?e=2147483647&v=beta&t=lM6rvQeKn5acRol9M-nmhhTHrm53fdFEDpTppJcFg5E"/>
+
 ## 8. Avaliação de modelos de dados
 ## 9. Técnicas de engenharia reversa para criação e atualização de modelos de dados
