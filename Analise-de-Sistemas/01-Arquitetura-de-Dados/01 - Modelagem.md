@@ -328,4 +328,33 @@ Contêm o contexto que envolve o evento de negócio. Respondem às perguntas de 
 <img src="https://media.licdn.com/dms/image/v2/D4D22AQGPX3aR01uP3w/feedshare-shrink_800/B4DZoevdalIkAg-/0/1761452361168?e=2147483647&v=beta&t=lM6rvQeKn5acRol9M-nmhhTHrm53fdFEDpTppJcFg5E"/>
 
 ## 8. Avaliação de modelos de dados
+
+Avaliar um modelo de dados é verificar se ele representa corretamente as necessidades do negócio e se pode ser implementado e mantido com qualidade. A avaliação deve considerar os modelos conceitual, lógico e físico, pois cada nível tem objetivos e critérios próprios.
+
+### Critérios de avaliação
+
+- **Aderência aos requisitos:** entidades, atributos, relacionamentos e regras de negócio relevantes estão representados, sem informações importantes ausentes ou ambíguas.
+- **Correção semântica:** nomes e definições refletem o significado dos dados; cardinalidades e obrigatoriedades correspondem às regras do domínio.
+- **Integridade e consistência:** chaves, restrições e regras impedem registros inválidos, órfãos ou contraditórios.
+- **Redundância e normalização:** os dados estão organizados para reduzir duplicidade e anomalias de inserção, atualização e exclusão. Desnormalizações devem ser justificadas por requisitos de consulta ou desempenho.
+- **Desempenho:** o modelo físico atende aos padrões esperados de leitura e escrita, considerando consultas, índices, volume e concorrência.
+- **Escalabilidade e flexibilidade:** a estrutura suporta crescimento e mudanças previsíveis sem exigir alterações desproporcionais ou arriscadas.
+- **Segurança e privacidade:** dados sensíveis são identificáveis e podem receber controles de acesso, retenção e proteção compatíveis com sua classificação.
+- **Manutenibilidade e compreensão:** o esquema é documentado, consistente e compreensível por quem precisa desenvolvê-lo, operá-lo ou evoluí-lo.
+
+### Como avaliar
+
+1. **Validar com os requisitos e as regras de negócio:** conferir se cada requisito de dados está representado e se as regras podem ser expressas no modelo.
+2. **Revisar o diagrama e o dicionário de dados:** verificar nomes, definições, chaves, cardinalidades, opcionalidade e consistência de convenções.
+3. **Analisar a normalização:** examinar dependências funcionais e formas normais para identificar redundâncias e anomalias; avaliar separadamente qualquer desnormalização.
+4. **Percorrer cenários de uso:** simular operações e consultas representativas, verificando se o modelo permite realizá-las sem contornar as regras de integridade.
+5. **Prototipar e testar o modelo físico:** criar o esquema em ambiente controlado e medir consultas e operações com dados e volumes representativos. Ajustes de índices e particionamento devem ser baseados em evidências.
+6. **Avaliar impactos de mudanças:** verificar efeitos sobre dados existentes, aplicações, integrações, relatórios e migrações antes de aprovar alterações.
+
+### Indicadores e trade-offs
+
+Podem ser observados indicadores como cobertura dos requisitos, quantidade de regras de negócio não implementadas, ocorrência de dados duplicados ou inválidos, tempo de resposta das consultas e esforço para realizar mudanças. Os limites de aceitação devem ser definidos conforme os requisitos do sistema; não há um único indicador que determine a qualidade do modelo.
+
+Os critérios podem entrar em conflito. Por exemplo, maior normalização tende a reduzir redundância, enquanto uma desnormalização controlada pode melhorar determinadas consultas. A decisão deve registrar o motivo, os benefícios, os riscos e como o resultado será monitorado. Um modelo adequado equilibra correção, integridade, desempenho e facilidade de evolução, em vez de otimizar apenas um aspecto.
+
 ## 9. Técnicas de engenharia reversa para criação e atualização de modelos de dados
