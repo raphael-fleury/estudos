@@ -73,3 +73,53 @@ A infraestrutura clássica de BI é composta por etapas sequenciais:
 - **Google Looker Studio / Looker:** foco em integrações na nuvem e no ecossistema Google.
 
 ## 3. Mapeamento de fontes de dados
+
+O mapeamento de fontes de dados identifica onde estão os dados relevantes para uma análise, como são produzidos e de que forma podem ser acessados. É uma etapa importante para integrar informações confiáveis em soluções de BI.
+
+### Objetivos
+
+- Conhecer os sistemas e responsáveis pelos dados da organização.
+- Identificar dados relevantes, duplicados ou inexistentes para cada necessidade de negócio.
+- Avaliar a qualidade, a disponibilidade e as limitações de uso das fontes.
+- Planejar a integração dos dados e manter sua origem rastreável (*data lineage*).
+
+### Classificação das fontes
+
+- **Origem:** internas (ERP, CRM, sistemas financeiros e planilhas corporativas) ou externas (dados públicos, fornecedores, redes sociais e serviços de mercado).
+- **Formato:** estruturadas (tabelas relacionais), semiestruturadas (JSON, XML e logs) ou não estruturadas (documentos, imagens, áudio e vídeo).
+- **Forma de acesso:** bancos de dados, arquivos, APIs, aplicações em nuvem ou dispositivos IoT.
+- **Frequência de atualização:** tempo real, periódica ou sob demanda.
+
+### Informações a registrar
+
+Para cada fonte, documente:
+
+- nome e descrição do sistema ou conjunto de dados;
+- área responsável e pessoa de contato;
+- entidades, tabelas ou arquivos disponíveis e seus principais campos;
+- significado dos campos, formatos, unidades e granularidade dos registros;
+- localização, método de acesso e frequência de atualização;
+- período histórico disponível e volume aproximado;
+- qualidade conhecida, como campos ausentes, duplicidades e inconsistências;
+- regras de acesso, classificação de confidencialidade e restrições legais;
+- dependências, transformações realizadas e destino dos dados integrados.
+
+### Etapas do mapeamento
+
+1. **Definir a necessidade de negócio:** esclarecer quais perguntas, indicadores ou decisões serão apoiados.
+2. **Identificar fontes candidatas:** consultar áreas de negócio, equipes de TI, catálogos de dados e documentação dos sistemas.
+3. **Levantar e descrever os dados:** registrar estruturas, campos, significados, formatos, responsáveis e formas de acesso.
+4. **Avaliar adequação e qualidade:** verificar se os dados são completos, consistentes, atuais e detalhados o suficiente para a análise.
+5. **Verificar acesso e conformidade:** confirmar autorizações, segurança e requisitos legais, incluindo a LGPD quando houver dados pessoais.
+6. **Documentar relações e fluxos:** indicar como os dados se conectam, são transformados e chegam ao Data Warehouse, Data Mart ou ferramenta analítica.
+7. **Validar com os responsáveis:** confirmar definições e regras de negócio com as áreas que produzem ou utilizam os dados.
+
+### Exemplo de inventário
+
+| Fonte | Dados disponíveis | Responsável | Atualização | Observações |
+|---|---|---|---|---|
+| ERP | Pedidos, produtos e faturamento | Operações | Diária | Fonte oficial de vendas |
+| CRM | Clientes e oportunidades | Comercial | Horária | Contém dados pessoais; acesso restrito |
+| Planilha de metas | Metas mensais por equipe | Gestão comercial | Mensal | Validar versão e responsável antes da carga |
+
+O inventário deve ser mantido atualizado: mudanças nos sistemas, nas regras de negócio ou nos responsáveis podem afetar a confiabilidade dos relatórios e indicadores.
