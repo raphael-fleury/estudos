@@ -132,4 +132,102 @@ Se $P$ implica $Q$ e $Q$ implica $R$, então $P$ implica $R$. A conclusão encad
 Reconhecer a forma lógica ajuda a distinguir uma conclusão que decorre necessariamente das premissas de uma conclusão que apenas parece plausível.
 
 ## 3. A lógica sentencial
+
+A **lógica sentencial**, também chamada de **lógica proposicional**, estuda como o valor de verdade de proposições compostas depende dos valores de verdade de suas partes e dos conectivos que as relacionam. Ela considera cada proposição simples como uma unidade, sem analisar sua estrutura interna.
+
+### Proposições simples e compostas
+
+Uma **proposição simples** (ou atômica) não contém outra proposição como componente lógico. Por convenção, letras como $P$, $Q$ e $R$ representam proposições simples. Por exemplo:
+
+- $P$: “Está chovendo.”
+- $Q$: “A rua está molhada.”
+
+Uma **proposição composta** é formada pela combinação de proposições simples por meio de conectivos. Com as proposições anteriores:
+
+- $\neg P$: “Não está chovendo.”
+- $P \land Q$: “Está chovendo e a rua está molhada.”
+- $P \rightarrow Q$: “Se está chovendo, então a rua está molhada.”
+
+Na lógica sentencial, interessa a forma lógica dessas expressões. A análise não verifica, por si só, se está realmente chovendo ou se a rua está molhada.
+
+### Simbolização
+
+Simbolizar consiste em substituir proposições simples por letras e representar os conectivos de modo explícito. Isso permite analisar a estrutura do raciocínio sem depender do conteúdo em linguagem natural.
+
+Por exemplo, sejam:
+
+- $P$: “O sistema está disponível.”
+- $Q$: “Os usuários conseguem acessar o serviço.”
+
+A frase “O sistema está disponível e os usuários conseguem acessar o serviço” é simbolizada por $P \land Q$. Já “Se o sistema está disponível, então os usuários conseguem acessar o serviço” é simbolizada por $P \rightarrow Q$.
+
+A simbolização deve preservar a relação expressa pela frase. Em particular, “ou” costuma ser representado pela disjunção inclusiva ($\lor$): basta que ao menos uma das proposições seja verdadeira, podendo ambas também ser verdadeiras.
+
+### Fórmulas e escopo
+
+As letras proposicionais e os conectivos formam **fórmulas**. Parênteses indicam como a fórmula deve ser agrupada e qual é o alcance de cada conectivo. Por exemplo, $P \land (Q \lor R)$ afirma que $P$ se combina com a disjunção entre $Q$ e $R$; já $(P \land Q) \lor R$ combina a conjunção entre $P$ e $Q$ com $R$. Essas fórmulas podem ter valores de verdade diferentes para os mesmos valores de $P$, $Q$ e $R$.
+
+Quando os parênteses são omitidos, uma convenção comum de precedência é: negação, conjunção, disjunção, condicional e bicondicional, nessa ordem. Ainda assim, o uso de parênteses é recomendado quando houver possibilidade de ambiguidade. As regras completas de formação de fórmulas são tratadas no tópico sobre regras de formação.
+
+### Tautologia, contradição e contingência
+
+Uma fórmula pode ser classificada conforme seu valor de verdade em todas as combinações possíveis de valores para suas proposições simples:
+
+- **Tautologia:** verdadeira em todas as combinações. Exemplo: $P \lor \neg P$.
+- **Contradição:** falsa em todas as combinações. Exemplo: $P \land \neg P$.
+- **Contingência:** verdadeira em algumas combinações e falsa em outras. Exemplo: $P \land Q$.
+
+As tabelas de verdade permitem verificar essas classificações. Com $n$ proposições simples distintas, é necessário considerar $2^n$ combinações possíveis de valores de verdade.
+
+### Equivalência lógica
+
+Duas fórmulas são **logicamente equivalentes** quando têm o mesmo valor de verdade em todas as combinações possíveis para suas proposições simples. A equivalência é indicada por $\equiv$. Por exemplo, a negação de uma conjunção equivale à disjunção das negações:
+
+$$
+\neg(P \land Q) \equiv \neg P \lor \neg Q
+$$
+
+A equivalência pode ser verificada comparando as colunas das fórmulas em uma tabela de verdade. Ela permite substituir uma fórmula por outra sem alterar o valor lógico de uma expressão maior. Algumas equivalências importantes são:
+
+| Nome | Expressão | Equivalência |
+|---|---|---|
+| Dupla negação | $\neg\neg P$ | $P$ |
+| Lei de De Morgan | $\neg(P \land Q)$ | $\neg P \lor \neg Q$ |
+| Lei de De Morgan | $\neg(P \lor Q)$ | $\neg P \land \neg Q$ |
+| Implicação material | $P \rightarrow Q$ | $\neg P \lor Q$ |
+| Contraposição | $P \rightarrow Q$ | $\neg Q \rightarrow \neg P$ |
+| Bicondicional | $P \leftrightarrow Q$ | $(P \rightarrow Q) \land (Q \rightarrow P)$ |
+| Comutatividade da conjunção | $P \land Q$ | $Q \land P$ |
+| Comutatividade da disjunção | $P \lor Q$ | $Q \lor P$ |
+| Associatividade | $(P \land Q) \land R$ | $P \land (Q \land R)$ |
+| Distributividade | $P \land (Q \lor R)$ | $(P \land Q) \lor (P \land R)$ |
+
+#### Exemplos de aplicação
+
+Seja $P$: “está chovendo” e $Q$: “a rua está molhada”. A condicional “se está chovendo, então a rua está molhada” pode ser reescrita pela implicação material como “não está chovendo ou a rua está molhada”:
+
+$$
+P \rightarrow Q \equiv \neg P \lor Q
+$$
+
+Também é possível transformar uma negação aplicando as leis de De Morgan. “Não é verdade que está chovendo e a rua está molhada” equivale a “não está chovendo ou a rua não está molhada”:
+
+$$
+\neg(P \land Q) \equiv \neg P \lor \neg Q
+$$
+
+As equivalências podem ser usadas em sequência. Por exemplo:
+
+$$
+\neg(P \rightarrow Q)
+\equiv \neg(\neg P \lor Q)
+\equiv P \land \neg Q
+$$
+
+Assim, a negação de “se $P$, então $Q$” só é verdadeira quando $P$ é verdadeira e $Q$ é falsa — exatamente o caso em que a condicional é falsa.
+
+### Limites da lógica sentencial
+
+A lógica sentencial trata cada proposição simples como indivisível. Assim, não representa diretamente a estrutura interna de frases como “todo usuário possui uma conta” ou “algum sistema está indisponível”. Para analisar objetos, propriedades e quantificadores como “todo” e “algum”, utiliza-se a lógica de predicados de primeira ordem, apresentada no tópico seguinte.
+
 ## 4. A lógica de predicados de primeira ordem
