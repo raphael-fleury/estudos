@@ -133,3 +133,45 @@ Quando o PMO é diretivo, pode assumir a gestão de determinados projetos; nos d
 Um PMO bem ajustado ao contexto pode aumentar a consistência das práticas, melhorar a visibilidade sobre o desempenho, facilitar o uso de recursos compartilhados e preservar o conhecimento institucional. Para isso, seus processos devem ajudar a tomada de decisão e a entrega de valor, evitando burocracia desproporcional ou a aplicação de padrões sem considerar as características de cada projeto.
 
 ## 4. Modelos e características
+
+Projetos podem ser conduzidos por diferentes **ciclos de vida** e **abordagens de desenvolvimento**. A escolha depende do grau de clareza e estabilidade dos requisitos, da possibilidade de entregar valor em partes, dos riscos, das restrições regulatórias, da tecnologia e da capacidade da equipe. Não existe uma abordagem universalmente superior: ela deve ser adequada ao contexto e pode ser ajustada durante o projeto.
+
+### Ciclo de vida do projeto e ciclo de vida do desenvolvimento
+
+- **Ciclo de vida do projeto:** conjunto de fases que vai do início ao encerramento do projeto. As fases ajudam a organizar o trabalho, as decisões e os pontos de revisão.
+- **Ciclo de vida do desenvolvimento:** forma como o produto, serviço ou resultado é definido, construído e entregue. Pode ser preditivo, iterativo, incremental ou uma combinação dessas formas.
+
+Um projeto pode ter fases sequenciais, sobrepostas ou repetidas. Ao fim de uma fase, um ponto de decisão — frequentemente chamado de *gate* ou revisão de fase — pode autorizar a continuidade, solicitar ajustes ou encerrar a iniciativa. As fases e os pontos de controle variam conforme o setor e a organização.
+
+### Abordagens de desenvolvimento
+
+| Abordagem | Características | Adequação típica e cuidados |
+|---|---|---|
+| **Preditiva** | Escopo, planejamento e entregas principais são definidos antecipadamente. O trabalho tende a avançar em fases sequenciais, com mudanças avaliadas e controladas. | Útil quando os requisitos são conhecidos e relativamente estáveis, ou quando há forte necessidade de previsibilidade e aprovação formal. Mudanças tardias podem custar mais e exigir replanejamento. |
+| **Iterativa** | A solução é desenvolvida por ciclos de elaboração e refinamento. Cada iteração permite aprender e melhorar o entendimento ou o desenho do produto. | Adequada quando a solução ainda precisa ser explorada. Uma iteração pode aprimorar a solução sem necessariamente disponibilizar uma parte utilizável ao usuário. |
+| **Incremental** | O produto é construído e disponibilizado em partes funcionais. Cada incremento acrescenta capacidade ao que já foi entregue. | Permite antecipar benefícios e obter retorno sobre partes utilizáveis. Os incrementos precisam integrar-se de forma coerente ao produto completo. |
+| **Adaptativa (ágil)** | Planejamento e entrega ocorrem em ciclos curtos, com frequente inspeção, feedback e repriorização. Escopo detalhado pode evoluir ao longo do trabalho. | Adequada quando há incerteza ou mudanças frequentes e é possível obter feedback recorrente. Requer participação das partes interessadas, equipe colaborativa e foco em entregas frequentes. |
+| **Híbrida** | Combina práticas preditivas e adaptativas, podendo usar níveis diferentes de planejamento ou abordagens distintas em partes do mesmo projeto. | Útil quando algumas partes são estáveis e outras incertas, ou quando a organização precisa conciliar entregas frequentes com governança formal. A integração entre planos, equipes e controles deve ser explícita. |
+
+**Iterativo** e **incremental** não são sinônimos: no primeiro, ciclos sucessivos refinam a solução; no segundo, cada entrega acrescenta uma parte utilizável. Uma abordagem adaptativa costuma combinar iteração e incrementos.
+
+### Características dos ciclos de vida
+
+- **Preditivo:** escopo e solução são definidos mais cedo; as entregas tendem a ocorrer ao final ou em marcos planejados. O custo de incorporar mudanças costuma crescer conforme o trabalho avança.
+- **Adaptativo:** requisitos e solução são detalhados progressivamente; entregas pequenas e frequentes permitem validar hipóteses e ajustar prioridades. A cadência pode ser fixa, como em iterações, ou contínua, como em um fluxo Kanban.
+- **Híbrido:** combina elementos dos dois modelos, por exemplo, governança e orçamento planejados em nível mais alto, com desenvolvimento iterativo de funcionalidades.
+
+Em qualquer ciclo de vida, a equipe deve definir como avaliar progresso, qualidade e aceitação das entregas. Em projetos preditivos, isso pode envolver marcos e comparação com linhas de base; em abordagens adaptativas, pode incluir incrementos concluídos, fluxo de trabalho e feedback. Métricas devem apoiar decisões, e não substituir a avaliação de valor.
+
+### Seleção e adaptação da abordagem
+
+Para selecionar ou ajustar a abordagem, considere:
+
+1. **Requisitos:** clareza, estabilidade e possibilidade de detalhamento antecipado.
+2. **Entrega de valor:** urgência dos benefícios e possibilidade de disponibilizar partes funcionais.
+3. **Incerteza e risco:** novidade tecnológica, dependências, complexidade e mudanças esperadas.
+4. **Partes interessadas:** disponibilidade para colaborar, validar entregas e decidir prioridades.
+5. **Regulação e governança:** exigências de documentação, rastreabilidade, auditoria e aprovações.
+6. **Equipe e ambiente:** competências, distribuição geográfica, autonomia, ferramentas e cultura organizacional.
+
+A **adaptação** (*tailoring*) consiste em escolher e ajustar práticas, processos, artefatos, controles e cadências ao projeto, em vez de aplicar um modelo mecanicamente. A adaptação não elimina a necessidade de governança: busca equilibrar controle, agilidade, qualidade e geração de valor. Suas decisões devem ser revistas quando o contexto mudar.
