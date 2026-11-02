@@ -93,4 +93,43 @@ A estrutura define relações de autoridade, responsabilidades e comunicação. 
 Em geral, à medida que a estrutura se aproxima da forma projetizada, aumentam a autoridade do gerente de projeto, a dedicação da equipe e a facilidade de comunicação direta. A escolha e a adaptação da abordagem devem levar em conta essas condições organizacionais.
 
 ## 3. Escritório de projetos
+
+O **escritório de projetos**, também chamado de **PMO** (*Project Management Office*), é uma estrutura organizacional que padroniza e apoia práticas de gerenciamento de projetos. Seu formato e seu grau de autoridade variam conforme as necessidades, a estratégia e a estrutura da organização.
+
+### Funções e responsabilidades
+
+Um PMO pode desempenhar uma ou várias destas funções:
+
+- definir e manter metodologias, padrões, modelos, ferramentas e métricas para os projetos;
+- oferecer orientação, treinamento, mentoria e suporte aos gerentes e às equipes;
+- consolidar informações sobre cronogramas, custos, riscos, recursos e desempenho;
+- facilitar o compartilhamento de conhecimentos, boas práticas e lições aprendidas;
+- apoiar a governança, verificando a aderência dos projetos às políticas e aos critérios organizacionais;
+- coordenar recursos compartilhados e dependências entre projetos;
+- apoiar a priorização e o alinhamento de projetos e programas aos objetivos estratégicos, quando essa responsabilidade lhe for atribuída.
+
+As atribuições concretas dependem do mandato do escritório: nem todo PMO controla o portfólio ou toma decisões sobre todos os projetos.
+
+### Tipos de PMO
+
+Uma classificação comum distingue os escritórios pelo nível de controle e influência que exercem:
+
+| Tipo | Atuação | Nível de controle |
+|---|---|---|
+| **De suporte** | Disponibiliza modelos, informações, treinamento, aconselhamento e lições aprendidas. | Baixo; sua atuação é principalmente consultiva. |
+| **De controle** | Além de oferecer suporte, exige o uso de padrões, métodos, ferramentas ou práticas definidos pela organização. | Moderado; verifica a conformidade com os requisitos estabelecidos. |
+| **Diretivo** | Assume a gestão direta de projetos e designa gerentes ou equipes para conduzi-los. | Alto; exerce autoridade sobre a execução dos projetos sob sua responsabilidade. |
+
+Esses tipos representam diferentes graus de autoridade, não necessariamente estruturas fixas. Um escritório pode combinar práticas ou ter níveis de atuação distintos conforme a unidade ou o projeto.
+
+### PMO e gerente de projeto
+
+O **gerente de projeto** lidera o trabalho para alcançar os objetivos e as entregas de um projeto específico, gerenciando a equipe e as restrições do projeto. O **PMO** atua no nível organizacional ou de um conjunto de projetos, apoiando ou direcionando a padronização, a governança, a coordenação e o alinhamento estratégico, de acordo com sua autoridade.
+
+Quando o PMO é diretivo, pode assumir a gestão de determinados projetos; nos demais casos, seu papel pode ser apenas de suporte ou controle. Portanto, a existência de um PMO não elimina automaticamente a função do gerente de projeto nem significa que todos os projetos sejam gerenciados centralmente.
+
+### Benefícios e limites
+
+Um PMO bem ajustado ao contexto pode aumentar a consistência das práticas, melhorar a visibilidade sobre o desempenho, facilitar o uso de recursos compartilhados e preservar o conhecimento institucional. Para isso, seus processos devem ajudar a tomada de decisão e a entrega de valor, evitando burocracia desproporcional ou a aplicação de padrões sem considerar as características de cada projeto.
+
 ## 4. Modelos e características
