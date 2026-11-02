@@ -2,9 +2,10 @@
 
 ## 1. Sistema Gerenciador de Banco de Dados (SGBD)
 
- Software que serve como intermediário entre os dados armazenados e os aplicativos ou usuários, permitindo criar, organizar, proteger e manipular bases de dados de forma eficiente.
+Software que serve como intermediário entre os dados armazenados e os aplicativos ou usuários, permitindo criar, organizar, proteger e manipular bases de dados de forma eficiente.
 
 Exemplos populares:
+
 - **Relacionais (SQL)**: MySQL, PostgreSQL, Oracle Database, Microsoft SQL Server e SQLite.
 - **Não relacionais (NoSQL)**: MongoDB, Redis e Cassandra.
 
@@ -58,5 +59,6 @@ Estruturar tabelas de forma equilibrada para evitar redundâncias, ou utilize t�
 Armazear em cache resultados de consultas frequentes ou utilize o buffer/cache interno do SGBD para evitar acessos repetidos ao disco.
 
 ### Configuração e Monitoramento
+
 - Ajustar parâmetros de memória compartilhada, tamanho de buffers e conexões máximas do servidor.
 - Monitorar em tempo real o uso de CPU, disco, I/O e sessões ativas usando ferramentas como o Oracle Database Performance Management ou comandos de sistema.
