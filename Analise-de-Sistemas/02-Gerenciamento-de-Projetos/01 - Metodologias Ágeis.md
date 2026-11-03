@@ -70,6 +70,29 @@ A **gestão de projetos** é a aplicação de conhecimentos, habilidades, ferram
 - **Quadros visuais e softwares de gestão:** Trello, Asana, Jira, Monday e Microsoft Project.
 - **Diagramas e gráficos:** gráfico de Gantt e WBS (*Work Breakdown Structure*, ou Estrutura Analítica do Projeto).
 
+### Estrutura Analítica do Projeto (EAP)
+
+A **Estrutura Analítica do Projeto** (**EAP**; *Work Breakdown Structure*, ou **WBS**) é a decomposição hierárquica do escopo total do projeto em partes menores e mais gerenciáveis, organizadas em torno das entregas e do trabalho necessário para produzi-las. Ela ajuda a definir o que está incluído no projeto, apoiar estimativas de prazo e custo, atribuir responsabilidades e acompanhar o progresso.
+
+A decomposição prossegue até chegar a componentes que possam ser estimados, planejados e controlados, chamados **pacotes de trabalho**. A **regra dos 100%** orienta que a EAP represente todo o escopo aprovado — incluindo o trabalho de gerenciamento — sem omissões nem trabalho fora do escopo. Os elementos de cada nível devem detalhar os componentes do nível superior sem sobreposição.
+
+Exemplo simplificado para um projeto de implantação de um sistema:
+
+```text
+1. Sistema implantado
+   1.1 Solução configurada
+       1.1.1 Requisitos levantados
+       1.1.2 Sistema configurado
+   1.2 Solução validada
+       1.2.1 Testes executados
+       1.2.2 Usuários treinados
+   1.3 Implantação concluída
+       1.3.1 Sistema disponibilizado
+       1.3.2 Operação transferida ao suporte
+```
+
+O **dicionário da EAP** complementa a estrutura com informações sobre cada componente, como escopo, critérios de aceitação, responsável, premissas e estimativas. A EAP descreve e organiza o escopo; não é, por si só, um cronograma nem precisa representar a sequência temporal das atividades. A ordem e as dependências do trabalho são detalhadas no planejamento do cronograma, por exemplo, com um diagrama de rede ou gráfico de Gantt.
+
 ### Método do Caminho Crítico (CPM)
 
 O **Método do Caminho Crítico** (*Critical Path Method*, ou **CPM**) é uma técnica de planejamento e controle de cronogramas. Ele representa as atividades e suas dependências em uma rede para identificar o caminho de maior duração entre o início e o fim do projeto. Esse caminho determina a menor duração possível do cronograma, dadas as durações e dependências estimadas.
