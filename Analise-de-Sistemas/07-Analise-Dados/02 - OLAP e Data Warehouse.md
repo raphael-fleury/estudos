@@ -20,4 +20,18 @@ As principais operações OLAP são:
 Em resumo, essas operações permitem resumir, detalhar, filtrar e reorganizar os dados para facilitar a comparação e a tomada de decisões.
 
 ## 2. Conceitos de data warehouse
+
+Um **data warehouse** (armazém de dados) é um repositório que reúne dados de diferentes fontes para apoiar análises e decisões. Por exemplo, uma empresa pode combinar informações de vendas, clientes e produtos para entender como o negócio mudou ao longo do tempo.
+
+Em geral, um data warehouse tem estas características:
+
+- **Orientado por assunto:** organiza os dados em torno de temas importantes, como vendas, clientes ou estoque.
+- **Integrado:** combina dados de várias fontes e padroniza diferenças, como formatos de data ou códigos de produto.
+- **Histórico:** guarda dados de diferentes períodos, permitindo comparar o presente com o passado.
+- **Não volátil:** os dados são carregados para consulta e análise; normalmente, não são alterados a cada operação do dia a dia.
+
+Os dados costumam passar por um processo de **ETL**: são **extraídos** dos sistemas de origem, **transformados** para corrigir, padronizar e combinar informações, e **carregados** no data warehouse. Em alguns ambientes, as transformações acontecem depois do carregamento, no processo chamado **ELT**.
+
+Um sistema operacional registra atividades atuais, como uma compra ou o pagamento de uma fatura. Já o data warehouse reúne e organiza esses registros para responder perguntas analíticas, como “As vendas cresceram em relação ao ano passado?”. Uma parte do data warehouse voltada a um tema ou área específica pode ser chamada de **data mart**.
+
 ## 3. Técnicas de modelagem e otimização de bases de dados multidimensionais
