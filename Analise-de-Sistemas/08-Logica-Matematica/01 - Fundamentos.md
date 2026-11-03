@@ -231,3 +231,100 @@ Assim, a negação de “se $P$, então $Q$” só é verdadeira quando $P$ é v
 A lógica sentencial trata cada proposição simples como indivisível. Assim, não representa diretamente a estrutura interna de frases como “todo usuário possui uma conta” ou “algum sistema está indisponível”. Para analisar objetos, propriedades e quantificadores como “todo” e “algum”, utiliza-se a lógica de predicados de primeira ordem, apresentada no tópico seguinte.
 
 ## 4. A lógica de predicados de primeira ordem
+
+A **lógica de predicados de primeira ordem** amplia a lógica sentencial ao representar a estrutura interna das proposições: os objetos de um domínio, suas propriedades e as relações entre eles. Para isso, utiliza predicados, variáveis e quantificadores. Ela é chamada de “primeira ordem” porque quantifica sobre objetos do domínio, e não diretamente sobre propriedades ou relações.
+
+### Domínio, indivíduos e predicados
+
+O **domínio de discurso** (ou universo) é o conjunto de objetos sobre os quais se fala. O domínio deve estar claro para interpretar corretamente uma fórmula. Por exemplo, podemos considerar como domínio todos os usuários de um sistema.
+
+Um **predicado** representa uma propriedade de um objeto ou uma relação entre objetos. Escrevemos o predicado seguido de seus argumentos:
+
+- $Ativo(x)$: “$x$ está ativo”, um predicado de um argumento;
+- $Acessa(x,y)$: “$x$ acessa $y$”, um predicado de dois argumentos.
+
+As letras minúsculas, como $x$ e $y$, normalmente representam variáveis que podem designar objetos do domínio. Constantes, como $a$ ou $s$, designam indivíduos específicos. Por exemplo, se $a$ representa um usuário específico, $Ativo(a)$ afirma que esse usuário está ativo.
+
+Uma fórmula com variável não quantificada, como $Ativo(x)$, não costuma ter um valor de verdade determinado até que se indique a que objeto $x$ se refere. Os quantificadores permitem expressar se a propriedade vale para todos ou para algum objeto do domínio.
+
+### Quantificador universal
+
+O símbolo $\forall$ significa **“para todo”** ou **“para qualquer”**. A fórmula:
+
+$$
+\forall x\, Ativo(x)
+$$
+
+afirma que todos os objetos do domínio estão ativos. Se o domínio for o conjunto de usuários, significa “todo usuário está ativo”.
+
+Para dizer que todos os usuários têm uma conta, usando $Usuario(x)$ para “$x$ é usuário” e $TemConta(x)$ para “$x$ tem uma conta”, escrevemos:
+
+$$
+\forall x\, (Usuario(x) \rightarrow TemConta(x))
+$$
+
+A condicional é importante: a fórmula diz que, para cada objeto do domínio, se ele for usuário, então tem uma conta. Objetos que não são usuários não precisam satisfazer $TemConta$.
+
+### Quantificador existencial
+
+O símbolo $\exists$ significa **“existe pelo menos um”**. A fórmula:
+
+$$
+\exists x\, Ativo(x)
+$$
+
+afirma que há pelo menos um objeto ativo no domínio. Para expressar “algum usuário está ativo”, escrevemos:
+
+$$
+\exists x\, (Usuario(x) \land Ativo(x))
+$$
+
+Aqui se usa a conjunção: deve existir um mesmo objeto que seja usuário e esteja ativo. Em geral, para afirmar que existe um objeto que satisfaz duas propriedades, usa-se $\land$; para afirmar que todos os objetos de uma classe satisfazem uma propriedade, usa-se uma condicional com $\rightarrow$.
+
+### Variáveis livres e ligadas
+
+Uma ocorrência de variável é **ligada** quando está no escopo de um quantificador que a quantifica. Por exemplo, em $\forall x\, Ativo(x)$, a ocorrência de $x$ é ligada. Uma variável é **livre** quando não está ligada por nenhum quantificador. Assim, em $Acessa(x,y)$, ambas as variáveis são livres; em $\forall x\, Acessa(x,y)$, $x$ é ligada e $y$ continua livre.
+
+Uma fórmula sem variáveis livres é chamada **sentença** e possui valor de verdade determinado em uma interpretação, isto é, dado um domínio e o significado dos predicados e constantes.
+
+### Escopo dos quantificadores e ordem
+
+O escopo de um quantificador é a parte da fórmula à qual ele se aplica. Parênteses ajudam a tornar esse escopo explícito:
+
+$$
+\forall x\, (Usuario(x) \rightarrow \exists y\, (Conta(y) \land Possui(x,y)))
+$$
+
+Essa fórmula diz que todo usuário possui pelo menos uma conta. O quantificador de $y$ está dentro do escopo de $\forall x$; por isso, a conta pode ser diferente para cada usuário.
+
+A ordem dos quantificadores pode mudar o significado. Por exemplo:
+
+$$
+\forall x\, \exists y\, Acessa(x,y)
+$$
+
+afirma que cada objeto $x$ acessa algum objeto $y$, que pode variar conforme $x$. Já:
+
+$$
+\exists y\, \forall x\, Acessa(x,y)
+$$
+
+afirma que existe um único objeto $y$ que é acessado por todos os objetos $x$. Em geral, quantificadores de tipos diferentes não podem ser trocados sem alterar o sentido.
+
+### Negação de quantificadores
+
+Negar uma afirmação universal equivale a afirmar que existe um contraexemplo; negar uma afirmação existencial equivale a dizer que nenhum objeto satisfaz a propriedade:
+
+$$
+\neg \forall x\, P(x) \equiv \exists x\, \neg P(x)
+$$
+
+$$
+\neg \exists x\, P(x) \equiv \forall x\, \neg P(x)
+$$
+
+Por exemplo, “não é verdade que todos os usuários estão ativos” significa “existe pelo menos um usuário que não está ativo”. Essas equivalências são úteis para negar corretamente frases com “todos” e “algum”.
+
+### Diferença em relação à lógica sentencial
+
+Na lógica sentencial, uma frase como “todo usuário está ativo” seria tratada como uma única letra proposicional, sem explicitar “usuário” ou “ativo”. Na lógica de predicados, sua estrutura pode ser representada por $\forall x\, (Usuario(x) \rightarrow Ativo(x))$, o que permite relacioná-la a outras afirmações sobre usuários, propriedades e objetos.
