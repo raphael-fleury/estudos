@@ -39,3 +39,30 @@ Nesta fase, as informações coletadas são refinadas, organizadas e traduzidas 
 - **Ferramentas de apoio:** uso de plataformas como Jira, Confluence, Trello ou IBM Engineering Requirements Management para centralizar a documentação.
 
 ## 2. Ciclo de vida de sistemas e seus paradigmas
+
+O Ciclo de Vida de Desenvolvimento de Sistemas (SDLC) é a estrutura que orienta a criação, a operação e a desativação de um sistema. Ele transforma um processo que poderia ser caótico em etapas organizadas e previsíveis.
+
+### 2.1. Fases principais do ciclo de vida
+
+O modelo clássico e mais amplo de SDLC divide-se em sete etapas fundamentais:
+
+1. **Planejamento:** definição dos objetivos, do escopo, dos custos, dos prazos e da viabilidade do projeto.
+2. **Análise de requisitos:** levantamento detalhado do que o sistema precisa fazer e dos problemas que deve resolver.
+3. **Projeto (design):** definição da arquitetura técnica, do banco de dados, dos fluxos e da interface do usuário.
+4. **Desenvolvimento (codificação):** escrita do código e construção dos módulos do sistema.
+5. **Testes:** validação da qualidade, verificação de falhas e execução de testes de integração, de sistema e de aceitação.
+6. **Implantação (deploy):** lançamento e disponibilização do sistema para os usuários finais.
+7. **Manutenção:** correção de falhas, atualizações e adaptações a novas tecnologias.
+
+### 2.2. Principais paradigmas e modelos
+
+Os paradigmas e modelos de ciclo de vida definem como essas fases são executadas ao longo do tempo:
+
+- **Modelo em Cascata (Waterfall):** sequencial e rígido. Cada etapa precisa ser concluída antes do início da seguinte. É adequado para requisitos fixos e bem conhecidos, mas pouco flexível a mudanças.
+- **Modelo em V:** variação da cascata em que cada fase de desenvolvimento possui uma fase de testes correspondente. Por exemplo, o projeto de alto nível se relaciona aos testes de aceitação.
+- **Modelo iterativo e incremental:** o sistema é construído em partes ou versões, que recebem novas funcionalidades a cada ciclo.
+- **Modelo em Espiral:** fortemente focado na gestão de riscos. A cada iteração, os riscos são analisados e novos protótipos podem ser gerados.
+- **Prototipagem:** construção rápida de modelos visuais ou funcionais para validar os requisitos com o cliente antes do desenvolvimento final.
+- **Paradigma ágil (Scrum, Kanban):** baseado em entregas rápidas, flexibilidade, colaboração próxima com o cliente e adaptação contínua a mudanças nos requisitos.
+- **DevOps / DevSecOps:** integração entre desenvolvimento (Dev) e operações (Ops), com automação contínua de testes, entrega e segurança (Sec).
+- **IA aumentada no SDLC (AI-augmented SDLC):** paradigma emergente em que ferramentas e agentes de inteligência artificial auxiliam ou executam partes do ciclo de vida, da geração de código aos testes e à implantação.
