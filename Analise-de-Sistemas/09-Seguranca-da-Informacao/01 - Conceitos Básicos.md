@@ -33,3 +33,50 @@ Controles comuns incluem:
 Um controle isolado não é suficiente. Por exemplo, uma sala de servidores pode ter acesso físico restrito, mas ainda precisa de contas individuais, permissões adequadas e monitoramento dos sistemas. Da mesma forma, controles digitais não impedem que um equipamento desprotegido seja furtado ou danificado. A combinação de medidas físicas e lógicas reduz riscos e contribui para a continuidade dos serviços.
 
 ## 2. Operação de segurança (Firewall, Proxy, IPS/IDS, DLP, CASB, SIEM, Antivírus, EDR, WAF, Gestão de vulnerabilidades, Monitoração, Backup)
+
+### Firewall
+
+Um **firewall** é um componente de segurança, implementado em hardware, software ou ambos, que controla o tráfego de rede de acordo com regras definidas. Ele pode proteger uma rede, um segmento ou um dispositivo, permitindo ou bloqueando comunicações entre diferentes zonas. Não se deve presumir que toda rede interna é confiável: as regras devem considerar a origem, o destino e o contexto de cada conexão.
+
+#### Funções
+
+- **Filtrar tráfego:** permitir ou bloquear conexões de entrada e saída conforme a política de segurança.
+- **Avaliar conexões:** considerar informações como endereços IP de origem e destino, portas, protocolos e, conforme o tipo de firewall, o estado da conexão ou a aplicação.
+- **Aplicar políticas de acesso:** reduzir comunicações desnecessárias e limitar a exposição de sistemas e serviços.
+- **Registrar eventos:** produzir registros que apoiem a monitoração, a auditoria e a investigação de incidentes.
+
+O firewall atua como uma barreira de controle, mas não garante, sozinho, a proteção contra toda atividade maliciosa. Sua eficácia depende de regras adequadas, manutenção e integração com outros controles de segurança.
+
+#### Tipos e métodos
+
+**Quanto à forma de implantação:**
+
+- **Firewall de rede (appliance):** equipamento dedicado ou função integrada a dispositivos de rede, usado para controlar o tráfego entre redes ou segmentos.
+- **Firewall de host:** software executado em um computador ou servidor, que controla as conexões daquele dispositivo.
+
+**Quanto à análise do tráfego:**
+
+- **Stateless (sem estado):** avalia cada pacote individualmente, usando critérios definidos nas regras, sem acompanhar o estado da conexão.
+- **Stateful (com estado):** mantém informações sobre conexões ativas e usa esse contexto para avaliar os pacotes, distinguindo melhor o tráfego associado a conexões estabelecidas.
+- **NGFW (Next-Generation Firewall):** firewall de próxima geração que pode combinar filtragem tradicional com recursos como identificação de aplicações e prevenção de intrusões (IPS). Os recursos disponíveis variam conforme o produto e a configuração.
+
+### Proxy
+
+Um **proxy** é um sistema intermediário que recebe solicitações de um cliente e as encaminha a um servidor de destino. A resposta retorna pelo proxy antes de chegar ao cliente. Em uma navegação web encaminhada por um proxy, o servidor de destino normalmente vê o endereço IP do proxy como origem da conexão; no entanto, a configuração e os cabeçalhos utilizados podem revelar informações sobre o cliente. Portanto, um proxy não garante anonimato nem substitui outros controles de segurança.
+
+#### Funções comuns
+
+- **Controle de acesso e filtragem:** aplicar políticas de navegação, como permitir ou bloquear categorias de sites e serviços.
+- **Registro e auditoria:** registrar solicitações para monitoração e investigação, respeitando as políticas de privacidade e retenção aplicáveis.
+- **Cache:** armazenar temporariamente conteúdos que podem ser reutilizados, reduzindo solicitações repetidas e o consumo de banda quando o conteúdo permite cache.
+- **Intermediação e proteção:** evitar conexões diretas entre clientes e determinados servidores e aplicar verificações ou políticas adicionais.
+- **Desempenho e disponibilidade:** um proxy reverso pode distribuir solicitações entre servidores e, dependendo da arquitetura, contribuir para cache e terminação TLS.
+
+#### Tipos de proxy
+
+- **Forward proxy (proxy de encaminhamento):** atua em nome dos clientes de uma rede, intermediando o acesso a servidores externos. É comum em organizações para aplicar políticas de navegação e controle.
+- **Reverse proxy (proxy reverso):** recebe solicitações destinadas a servidores internos e as encaminha aos serviços apropriados. Pode ocultar detalhes da infraestrutura de origem, distribuir tráfego e integrar recursos de segurança.
+- **Transparente:** é configurado para que o cliente não precise definir explicitamente o proxy; ainda pode ser percebido por aplicações ou protocolos, e não deve ser entendido como mecanismo de anonimato.
+- **Anônimo e de alta anonimidade (elite):** classificações relacionadas às informações que o proxy revela ao destino sobre o cliente e sobre o uso de um proxy. O comportamento depende da configuração e não constitui garantia de privacidade.
+
+Proxy e firewall podem atuar em conjunto, mas têm funções distintas: o firewall controla o tráfego conforme regras de rede, enquanto o proxy intermedeia solicitações em protocolos ou aplicações compatíveis. O uso de um não elimina a necessidade do outro.
