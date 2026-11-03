@@ -39,5 +39,17 @@ O mercado pode ser classificado pelo tipo de cliente:
 Ao analisar um mercado de TI, convém identificar quem compra e quem fornece, qual problema a solução atende, como é entregue e remunerada, quais alternativas existem e de quais tecnologias ou fornecedores ela depende.
 
 ## 2. Princípios de economia da inovação
+
+A economia da inovação estuda como o progresso técnico, a criação de novas ideias e sua aplicação comercial impulsionam o crescimento econômico e transformam os mercados.
+
+### Principais conceitos e fundamentos
+
+- **Invenção e inovação:** invenção é a criação de algo tecnicamente novo ou de uma ideia original, que ainda não precisa ter uso econômico. Inovação ocorre quando uma invenção ou ideia é aplicada com sucesso, gerando valor econômico, reduzindo custos ou criando novos hábitos de consumo.
+- **Destruição criadora:** o economista Joseph Schumpeter defendia que a inovação é um motor do capitalismo. Novos produtos, empresas e tecnologias substituem os antigos, transformando os mercados e, muitas vezes, tornando obsoletas soluções existentes.
+- **Science-push e demand-pull:** a inovação não depende apenas da oferta de novas descobertas científicas e técnicas (science-push), nem somente das necessidades do mercado (demand-pull). Seu sucesso costuma depender da interação entre o que a ciência e a tecnologia podem desenvolver e as necessidades e comportamentos dos usuários.
+- **Incerteza e pesquisa:** inovações radicais envolvem incertezas sobre custos, prazos e aceitação pelo público. A pesquisa básica, cujos resultados podem levar tempo para se converter em aplicações comerciais, pode depender de financiamento e incentivos públicos.
+- **Sistemas nacionais e locais de inovação:** empresas não inovam isoladamente. Elas interagem com universidades, institutos de pesquisa, governos e outras organizações, em redes influenciadas pelas instituições e condições econômicas de cada região.
+- **Tipos de inovação:** podem envolver produtos, processos produtivos, mercados, fontes de matérias-primas e formas de organização empresarial.
+
 ## 3. Conceitos e perspectivas da tecnologia
 ## 4. Ciência, pesquisa, desenvolvimento e indústria
