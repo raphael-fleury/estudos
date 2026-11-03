@@ -70,6 +70,30 @@ A **gestão de projetos** é a aplicação de conhecimentos, habilidades, ferram
 - **Quadros visuais e softwares de gestão:** Trello, Asana, Jira, Monday e Microsoft Project.
 - **Diagramas e gráficos:** gráfico de Gantt e WBS (*Work Breakdown Structure*, ou Estrutura Analítica do Projeto).
 
+### Método do Caminho Crítico (CPM)
+
+O **Método do Caminho Crítico** (*Critical Path Method*, ou **CPM**) é uma técnica de planejamento e controle de cronogramas. Ele representa as atividades e suas dependências em uma rede para identificar o caminho de maior duração entre o início e o fim do projeto. Esse caminho determina a menor duração possível do cronograma, dadas as durações e dependências estimadas.
+
+Para aplicá-lo:
+
+1. Liste as atividades, suas durações e suas predecessoras (atividades que precisam terminar antes).
+2. Represente as dependências em uma rede e calcule as datas mais cedo de início e término de cada atividade, avançando do início ao fim.
+3. Faça o cálculo inverso, do fim ao início, para obter as datas mais tarde em que cada atividade pode começar e terminar sem atrasar o projeto.
+4. Calcule a **folga total** de cada atividade: a diferença entre as datas mais tarde e mais cedo de início (ou de término). As atividades com folga zero formam um caminho crítico.
+
+Por exemplo, considere as seguintes atividades:
+
+| Atividade | Duração | Predecessoras |
+|---|---:|---|
+| A | 3 dias | — |
+| B | 4 dias | A |
+| C | 2 dias | A |
+| D | 2 dias | B e C |
+
+Há dois caminhos do início ao fim: **A → B → D**, com 9 dias, e **A → C → D**, com 7 dias. Portanto, **A → B → D** é o caminho crítico e a duração estimada do projeto é de 9 dias. Nesse exemplo, C tem 2 dias de folga; um atraso superior a essa folga pode tornar esse caminho crítico e postergar a conclusão.
+
+As atividades críticas exigem acompanhamento cuidadoso, pois um atraso nelas tende a atrasar a data final, salvo se houver ajustes no cronograma. A duração do caminho crítico pode mudar quando durações ou dependências são atualizadas, e pode haver mais de um caminho crítico. O CPM apoia decisões de priorização e replanejamento, mas suas estimativas não eliminam incertezas nem substituem a análise de recursos e riscos.
+
 ## 4. Gestão de produto
 
 A **gestão de produtos** é uma prática estratégica que orienta todo o ciclo de vida de um produto — da pesquisa e ideação ao lançamento, às melhorias contínuas e à descontinuação — alinhando objetivos de negócio, tecnologia e experiência do usuário (UX).
