@@ -94,6 +94,31 @@ Há dois caminhos do início ao fim: **A → B → D**, com 9 dias, e **A → C 
 
 As atividades críticas exigem acompanhamento cuidadoso, pois um atraso nelas tende a atrasar a data final, salvo se houver ajustes no cronograma. A duração do caminho crítico pode mudar quando durações ou dependências são atualizadas, e pode haver mais de um caminho crítico. O CPM apoia decisões de priorização e replanejamento, mas suas estimativas não eliminam incertezas nem substituem a análise de recursos e riscos.
 
+### Gerenciamento de Valor Agregado (GVA)
+
+O **Gerenciamento de Valor Agregado** (*Earned Value Management*, ou **EVM**; também chamado de **GVA**) integra escopo, cronograma e custos para avaliar o desempenho do projeto em uma data de controle. A análise compara o trabalho planejado, o trabalho efetivamente concluído e o custo incorrido. Para isso, é necessário ter uma linha de base aprovada e medir o progresso com critérios consistentes.
+
+Os três valores básicos são:
+
+- **Valor Planejado (VP ou PV):** orçamento autorizado para o trabalho que deveria estar concluído até a data de controle.
+- **Valor Agregado (VA ou EV):** orçamento previsto para o trabalho que foi efetivamente concluído até essa data. Não é o valor financeiro recebido pelo projeto.
+- **Custo Real (CR ou AC):** custo incorrido para realizar o trabalho concluído até a data de controle.
+
+Com esses valores, calculam-se variações e índices:
+
+| Indicador | Fórmula | Interpretação |
+|---|---|---|
+| **Variação de custo (VC ou CV)** | VA − CR | Positiva: abaixo do orçamento para o trabalho realizado; negativa: acima do orçamento. |
+| **Variação de prazo (VPr ou SV)** | VA − VP | Positiva: mais trabalho foi concluído do que o planejado; negativa: menos. É expressa em valor monetário, não em dias. |
+| **Índice de desempenho de custos (IDC ou CPI)** | VA ÷ CR | Maior que 1: desempenho favorável de custos; menor que 1: custo acima do valor agregado. |
+| **Índice de desempenho de prazo (IDP ou SPI)** | VA ÷ VP | Maior que 1: avanço superior ao planejado; menor que 1: avanço inferior. |
+
+Por exemplo, suponha que, em determinada data, o projeto tenha **VP = R$ 50 mil**, **VA = R$ 40 mil** e **CR = R$ 45 mil**. Então, **VC = −R$ 5 mil** e **VPr = −R$ 10 mil**; além disso, **IDC ≈ 0,89** e **IDP = 0,80**. Isso indica que foi agregado menos valor do que o planejado e que o custo incorrido supera o valor do trabalho concluído.
+
+O GVA também pode apoiar previsões. Se o orçamento no término (**ONT ou BAC**) for R$ 100 mil e se assumir que o desempenho de custos observado continuará, uma estimativa simplificada do custo no término é **ENT = ONT ÷ IDC**; no exemplo, aproximadamente **R$ 112,5 mil**. Essa previsão depende da hipótese adotada: outras fórmulas podem ser mais adequadas quando os desvios são considerados excepcionais ou quando também se leva em conta o desempenho do cronograma.
+
+O GVA fornece indicadores para identificar desvios e apoiar decisões, mas não explica suas causas por si só. Os resultados dependem da qualidade da linha de base, da medição do trabalho concluído e da atualização dos custos; por isso, devem ser analisados junto ao contexto, aos riscos e às mudanças aprovadas.
+
 ## 4. Gestão de produto
 
 A **gestão de produtos** é uma prática estratégica que orienta todo o ciclo de vida de um produto — da pesquisa e ideação ao lançamento, às melhorias contínuas e à descontinuação — alinhando objetivos de negócio, tecnologia e experiência do usuário (UX).
