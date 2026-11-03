@@ -82,4 +82,46 @@ Os paradigmas não são sinônimos de linguagens de programação nem determinam
 - Evitar documentação excessiva ou modelos desatualizados: registrar o que ajuda a comunicar, analisar, construir ou manter a solução.
 
 ## 2. Verificação, validação e teste
+
+Na Engenharia de Software, **Verificação, Validação e Teste** são práticas fundamentais para avaliar a qualidade e a confiabilidade do sistema e verificar se ele atende aos requisitos e objetivos propostos. Verificação e validação (V&V) são atividades relacionadas, mas respondem a perguntas diferentes.
+
+### 2.1. Verificação: construir o produto do jeito certo
+
+A verificação avalia se o produto está sendo desenvolvido em conformidade com os requisitos, especificações e critérios definidos para cada etapa.
+
+- **Pergunta-chave:** “Estamos construindo o produto corretamente?”
+- **Foco:** conformidade com requisitos, projeto e normas aplicáveis.
+- **Natureza:** pode ser estática, sem executar o código, ou dinâmica, com execução.
+- **Exemplos:** revisão de requisitos e arquitetura, inspeção de código, análise estática e testes de unidade ou integração projetados para verificar requisitos especificados.
+
+### 2.2. Validação: construir o produto certo
+
+A validação avalia se o sistema atende às necessidades reais dos usuários e ao propósito de uso no contexto previsto.
+
+- **Pergunta-chave:** “Estamos construindo o produto certo?”
+- **Foco:** adequação ao uso, às expectativas dos usuários e aos objetivos de negócio.
+- **Natureza:** frequentemente dinâmica e realizada com participação de usuários ou representantes do negócio; também pode incluir avaliações e revisões sem execução do software.
+- **Exemplos:** testes de aceitação, testes de usabilidade e avaliação do sistema em um ambiente representativo de uso.
+
+### 2.3. Teste de software
+
+Teste de software é um conjunto de atividades que pode envolver executar o programa com entradas selecionadas, comparar os resultados observados com os esperados e identificar falhas ou avaliar atributos de qualidade. Testes também incluem atividades estáticas, como revisão e análise de artefatos, embora o teste dinâmico envolva a execução do software.
+
+Os testes podem apoiar tanto a verificação quanto a validação: por exemplo, um teste de integração pode verificar a conformidade com uma especificação, enquanto um teste de aceitação pode validar se a solução atende aos critérios de negócio. **O nível do teste, por si só, não define se ele é verificação ou validação; isso depende do objetivo e dos critérios usados.**
+
+#### Níveis comuns de teste
+
+1. **Teste de unidade:** verifica componentes, funções ou unidades de código de forma isolada.
+2. **Teste de integração:** verifica a interação e a troca de dados entre módulos ou componentes.
+3. **Teste de sistema:** avalia o sistema integrado em relação aos requisitos especificados.
+4. **Teste de aceitação:** avalia se o sistema atende aos critérios de aceitação e às necessidades do negócio e dos usuários.
+
+### 2.4. Resumo comparativo
+
+| Conceito | Foco principal | Executa o código? | Pergunta central |
+|---|---|---|---|
+| **Verificação** | Conformidade com especificações, requisitos e normas | Nem sempre; pode ser estática ou dinâmica | “Estamos construindo o produto corretamente?” |
+| **Validação** | Necessidades dos usuários e adequação ao propósito de uso | Frequentemente sim, mas também pode envolver avaliações sem execução | “Estamos construindo o produto certo?” |
+| **Teste** | Avaliação do comportamento e da qualidade; identificação de falhas | Testes dinâmicos sim; atividades estáticas não | “O que acontece quando avaliamos o produto?” |
+
 ## 3. Ambientes de desenvolvimento de software
