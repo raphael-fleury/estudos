@@ -35,3 +35,24 @@ Os dados costumam passar por um processo de **ETL**: são **extraídos** dos sis
 Um sistema operacional registra atividades atuais, como uma compra ou o pagamento de uma fatura. Já o data warehouse reúne e organiza esses registros para responder perguntas analíticas, como “As vendas cresceram em relação ao ano passado?”. Uma parte do data warehouse voltada a um tema ou área específica pode ser chamada de **data mart**.
 
 ## 3. Técnicas de modelagem e otimização de bases de dados multidimensionais
+
+Para organizar dados multidimensionais, é comum usar **tabelas fato** e **tabelas dimensão**:
+
+- **Tabela fato:** registra eventos que podem ser medidos, como vendas. Contém medidas (por exemplo, quantidade e valor) e referências às dimensões.
+- **Tabela dimensão:** descreve o contexto do evento, como produto, cliente, loja e data. Pode incluir níveis de detalhe, como dia, mês, trimestre e ano.
+
+Dois modelos bastante usados são:
+
+- **Esquema estrela:** uma tabela fato fica no centro e se relaciona diretamente com as tabelas dimensão. É mais simples de entender e consultar.
+- **Esquema floco de neve:** algumas dimensões são divididas em tabelas relacionadas. Isso reduz repetição de dados, mas pode exigir mais junções nas consultas.
+
+Por exemplo, para analisar vendas, a tabela fato pode guardar o valor e a quantidade vendidos; as dimensões podem informar qual produto foi vendido, em qual loja e em que data.
+
+Algumas técnicas ajudam a melhorar o desempenho das consultas:
+
+- **Índices:** facilitam a localização de registros usados com frequência em filtros e junções.
+- **Particionamento:** divide uma tabela grande em partes menores, por exemplo, por ano, para que consultas sobre um período leiam menos dados.
+- **Agregações pré-calculadas:** armazenam totais frequentes, como vendas por mês e região, evitando recalcular tudo a cada consulta.
+- **Escolha de granularidade:** define o nível de detalhe guardado na tabela fato. Registrar cada item vendido permite análises detalhadas, mas ocupa mais espaço; guardar somente totais reduz o volume, mas limita certos tipos de consulta.
+
+A modelagem e a otimização devem considerar as perguntas que serão feitas aos dados. Assim, é possível equilibrar facilidade de análise, velocidade das consultas e espaço de armazenamento.
