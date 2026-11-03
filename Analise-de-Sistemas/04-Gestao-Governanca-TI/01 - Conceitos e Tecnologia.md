@@ -52,4 +52,36 @@ A economia da inovação estuda como o progresso técnico, a criação de novas 
 - **Tipos de inovação:** podem envolver produtos, processos produtivos, mercados, fontes de matérias-primas e formas de organização empresarial.
 
 ## 3. Conceitos e perspectivas da tecnologia
+
+Tecnologia é a aplicação organizada de conhecimentos, técnicas, ferramentas e processos para resolver problemas e atender a necessidades. Não se limita a equipamentos: inclui também métodos, sistemas, competências, formas de trabalho e conhecimentos incorporados às soluções.
+
+### Perspectivas sobre a tecnologia
+
+- **Instrumental:** tecnologia é vista como ferramenta ou meio para realizar uma tarefa ou alcançar um objetivo.
+- **Sociotécnica:** uma tecnologia funciona em interação com pessoas, processos, dados, organizações e infraestrutura. Seu resultado depende tanto dos componentes técnicos quanto da forma como são utilizados e administrados.
+- **Social e histórica:** necessidades, valores, instituições e condições econômicas influenciam quais tecnologias são desenvolvidas e adotadas. Depois de adotadas, elas também podem alterar relações sociais, atividades profissionais e práticas cotidianas.
+
+Por isso, a tecnologia não deve ser avaliada apenas por suas funcionalidades. É necessário considerar o contexto de uso, quem se beneficia, quais capacidades são exigidas e quais efeitos ou riscos podem surgir.
+
+### Desenvolvimento e adoção
+
+Uma tecnologia percorre, em geral, etapas de pesquisa ou concepção, desenvolvimento, implementação, difusão, adoção, adaptação e eventual substituição ou descontinuação. As etapas podem se sobrepor, e o uso real frequentemente leva a ajustes na solução.
+
+A adoção depende de fatores como:
+
+- adequação ao problema e aos objetivos da organização;
+- compatibilidade com sistemas, processos e padrões existentes;
+- custos de aquisição, implantação, operação e manutenção;
+- disponibilidade de infraestrutura e de profissionais capacitados;
+- facilidade de uso, acessibilidade e aceitação pelos usuários;
+- segurança, privacidade, conformidade legal e continuidade do serviço.
+
+### Tecnologia digital e transformação
+
+- **Digitalização de dados:** conversão de informações analógicas para um formato digital, como transformar documentos em papel em arquivos eletrônicos.
+- **Digitalização de processos:** uso de tecnologias digitais para executar ou aperfeiçoar atividades existentes, como automatizar o processamento de solicitações.
+- **Transformação digital:** mudança mais ampla na organização, que utiliza tecnologias digitais para rever processos, serviços, modelos de negócio e formas de relacionamento com clientes e cidadãos.
+
+A transformação digital envolve mudanças organizacionais e culturais, além da implantação de ferramentas. Seus resultados devem ser avaliados pelos efeitos sobre os usuários, a eficiência, a qualidade dos serviços e os riscos, incluindo privacidade, segurança, dependência tecnológica e exclusão digital.
+
 ## 4. Ciência, pesquisa, desenvolvimento e indústria
