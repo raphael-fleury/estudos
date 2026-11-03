@@ -80,3 +80,19 @@ Um **proxy** é um sistema intermediário que recebe solicitações de um client
 - **Anônimo e de alta anonimidade (elite):** classificações relacionadas às informações que o proxy revela ao destino sobre o cliente e sobre o uso de um proxy. O comportamento depende da configuração e não constitui garantia de privacidade.
 
 Proxy e firewall podem atuar em conjunto, mas têm funções distintas: o firewall controla o tráfego conforme regras de rede, enquanto o proxy intermedeia solicitações em protocolos ou aplicações compatíveis. O uso de um não elimina a necessidade do outro.
+
+### IDS e IPS
+
+O **IDS (Sistema de Detecção de Intrusão)** e o **IPS (Sistema de Prevenção de Intrusão)** monitoram o tráfego da rede em busca de ameaças conhecidas ou atividades anômalas, mas diferem na forma de atuação.
+
+#### IDS (Intrusion Detection System)
+
+- **Como funciona:** atua de forma passiva, monitorando o tráfego da rede — geralmente por meio de uma porta espelhada ou de um *tap* — e comparando as atividades com assinaturas de ameaças conhecidas ou padrões de anomalia.
+- **Ação:** detecta eventos suspeitos e gera alertas para a equipe de segurança, sem alterar nem bloquear os pacotes de rede.
+- **Vantagem:** como o tráfego não passa diretamente pelo IDS, ele não adiciona latência ao fluxo da rede.
+
+#### IPS (Intrusion Prevention System)
+
+- **Como funciona:** atua de forma ativa e fica posicionado *inline*, no caminho direto do tráfego. Todo o tráfego passa por ele para ser inspecionado em tempo real.
+- **Ação:** além de detectar ameaças, pode bloquear ou descartar pacotes e encerrar conexões para impedir um ataque.
+- **Vantagem:** pode evitar invasões de forma proativa. Como analisa o tráfego em linha, pode introduzir uma pequena latência na rede.
