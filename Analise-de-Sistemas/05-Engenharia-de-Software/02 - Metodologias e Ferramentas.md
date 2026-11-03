@@ -125,3 +125,58 @@ Os testes podem apoiar tanto a verificação quanto a validação: por exemplo, 
 | **Teste** | Avaliação do comportamento e da qualidade; identificação de falhas | Testes dinâmicos sim; atividades estáticas não | “O que acontece quando avaliamos o produto?” |
 
 ## 3. Ambientes de desenvolvimento de software
+
+Um **ambiente de desenvolvimento de software** reúne hardware, sistemas operacionais, ferramentas, bibliotecas, serviços, configurações e dados usados para criar, executar, testar e manter aplicações. Um ambiente bem definido facilita a colaboração, reduz diferenças entre máquinas e ajuda a entregar versões reproduzíveis e confiáveis.
+
+### 3.1. Componentes do ambiente
+
+- **Hardware e sistema operacional:** recursos de processamento, memória, armazenamento e sistema sobre o qual as ferramentas e aplicações são executadas.
+- **Linguagens e runtimes:** linguagens de programação, compiladores, interpretadores e ambientes de execução necessários para construir ou executar o software.
+- **IDE e editores:** oferecem recursos como edição, navegação no código, refatoração, integração com depurador e execução de tarefas. Também é possível desenvolver com ferramentas de linha de comando.
+- **Depuradores e ferramentas de diagnóstico:** ajudam a observar a execução, inspecionar variáveis, acompanhar chamadas e investigar falhas.
+- **Ferramentas de build e automação:** compilam, empacotam e executam tarefas repetíveis, como análise estática e testes.
+- **Bibliotecas, frameworks e gerenciadores de pacotes:** fornecem componentes reutilizáveis e controlam dependências. Versões e fontes das dependências devem ser registradas para permitir instalações consistentes.
+- **Controle de versão:** mantém o histórico das alterações e permite colaboração, revisão de código e recuperação de versões. O Git é um exemplo de sistema distribuído de controle de versão.
+- **Serviços de apoio:** bancos de dados, filas, serviços de identidade, APIs e outros componentes de que a aplicação depende. Em desenvolvimento, podem ser locais, compartilhados ou simulados.
+
+### 3.2. Ambientes ao longo do ciclo de entrega
+
+É comum separar ambientes para limitar riscos e controlar a progressão de uma alteração. Os nomes e a quantidade variam entre organizações, e nem todo projeto precisa de ambientes separados para cada etapa.
+
+1. **Desenvolvimento (development):** usado pela equipe para implementar funcionalidades e realizar verificações iniciais. Pode conter configurações e dados locais ou de teste.
+2. **Integração ou teste (integration/test):** recebe alterações para avaliar a integração entre componentes e executar testes automatizados ou manuais em condições controladas.
+3. **Homologação ou pré-produção (staging):** procura reproduzir aspectos relevantes da produção e permite validações finais, como testes de aceitação. Não deve ser confundida com o ambiente produtivo.
+4. **Produção (production):** ambiente em que o sistema atende usuários reais. Mudanças são implantadas de forma controlada, com monitoramento e procedimentos de recuperação.
+
+Separar ambientes ajuda a proteger dados e serviços produtivos, mas exige manter as configurações compatíveis. O acesso deve ser concedido conforme a necessidade e ambientes não produtivos devem usar dados fictícios ou devidamente protegidos, em vez de expor dados pessoais ou confidenciais sem autorização.
+
+### 3.3. Integração, entrega e implantação contínuas
+
+A **integração contínua (CI)** automatiza a integração frequente de alterações e executa verificações, como build, testes e análise de código, para detectar problemas cedo. A **entrega contínua** mantém o software em condição de ser liberado, normalmente com a decisão de publicação ainda sujeita a aprovação. Na **implantação contínua**, alterações que passam pelas verificações podem ser publicadas automaticamente em produção, conforme as regras da organização.
+
+Pipelines de CI/CD (*Continuous Integration/Continuous Delivery or Deployment*) descrevem essas etapas automatizadas. Um pipeline típico pode:
+
+1. obter o código versionado e instalar dependências;
+2. compilar ou empacotar a aplicação;
+3. executar verificações de qualidade e testes;
+4. gerar e armazenar um artefato versionado;
+5. implantar o artefato em um ambiente e executar verificações posteriores.
+
+Automatizar não elimina a necessidade de testes, revisão, aprovação ou monitoramento. A estratégia de implantação deve considerar o impacto de falhas e permitir identificar e reverter ou corrigir uma versão problemática.
+
+### 3.4. Configuração, contêineres e reprodutibilidade
+
+- **Configuração por ambiente:** parâmetros que variam entre ambientes, como endereços de serviços e níveis de log, devem ser separados do código e gerenciados de forma controlada.
+- **Segredos:** senhas, chaves e tokens devem ser armazenados em mecanismos apropriados de gestão de segredos, não no código-fonte, em imagens públicas ou em arquivos versionados sem proteção.
+- **Contêineres:** empacotam a aplicação e suas dependências de execução em uma unidade isolada, facilitando consistência entre ambientes. Não substituem automaticamente máquinas virtuais, controles de segurança ou o gerenciamento de dados persistentes.
+- **Infraestrutura como código (IaC):** permite declarar e versionar a configuração de infraestrutura para automatizar sua criação e reduzir divergências entre ambientes.
+- **Reprodutibilidade:** versões fixadas de ferramentas e dependências, scripts de configuração e documentação de execução ajudam diferentes pessoas e sistemas a obter resultados compatíveis.
+
+### 3.5. Boas práticas
+
+- Padronizar e documentar os passos para configurar, executar e testar o projeto.
+- Versionar código, scripts de automação e arquivos de configuração não sensíveis; revisar alterações antes de integrá-las.
+- Manter dependências atualizadas e controladas, avaliando compatibilidade e riscos antes de atualizações.
+- Executar testes e verificações automatizadas de forma consistente, de preferência também em integração contínua.
+- Restringir acessos por ambiente e não usar dados produtivos sem autorização e medidas de proteção adequadas.
+- Monitorar aplicações implantadas e manter procedimentos de backup, recuperação e reversão compatíveis com a criticidade do sistema.
