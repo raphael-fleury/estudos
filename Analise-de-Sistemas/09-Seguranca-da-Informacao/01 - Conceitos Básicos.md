@@ -187,3 +187,25 @@ O **EDR (Detecção e Resposta de Ponto de Extremidade)** é uma solução de se
 - **EDR:** acrescenta recursos de monitoramento, detecção, investigação e resposta a incidentes nos endpoints.
 
 Essas capacidades podem coexistir em uma mesma plataforma. O EDR complementa a prevenção, mas não garante que toda ameaça seja detectada ou contida; sua eficácia depende da cobertura dos dispositivos, das políticas e da resposta da equipe.
+
+### WAF (Web Application Firewall)
+
+O **WAF (Web Application Firewall ou Firewall de Aplicativo Web)** é uma solução de segurança que filtra, monitora e pode bloquear o tráfego HTTP/HTTPS de e para um site, sistema ou API.
+
+#### Como funciona
+
+- **Camada de aplicação:** diferente de um firewall tradicional, que controla o tráfego de rede de forma mais ampla, o WAF atua na camada 7 do modelo OSI (Camada de Aplicação) e inspeciona requisições web antes que elas cheguem à aplicação.
+- **Filtros e regras:** pode operar com listas de bloqueio, listas de permissão ou modelos híbridos. Algumas soluções também usam análise comportamental e técnicas de inteligência artificial para identificar atividades anômalas.
+- **Tipos de implantação:**
+  - **Baseado em nuvem:** geralmente é simples de configurar e pode ser integrado por meio de alterações de DNS.
+  - **Baseado em rede (hardware):** instalado localmente, pode oferecer baixa latência, mas costuma ter maior custo de aquisição e manutenção.
+  - **Baseado em host (software):** executado no servidor ou integrado ao ambiente da aplicação.
+
+#### Principais ameaças que ajuda a combater
+
+- **Injeção de SQL (SQLi):** tentativas de manipular consultas ao banco de dados por meio de entradas da aplicação.
+- **Cross-Site Scripting (XSS):** tentativas de inserir scripts que podem ser executados nos navegadores de outros usuários.
+- **Negação de serviço na camada 7:** volume de solicitações que busca sobrecarregar uma aplicação web.
+- **Exploração de vulnerabilidades e bots maliciosos:** solicitações automatizadas ou suspeitas dirigidas à aplicação.
+
+Um WAF complementa, mas não substitui, práticas de desenvolvimento seguro, correção de vulnerabilidades e outros controles de segurança. Sua eficácia depende das regras, da configuração e da atualização contínua.
