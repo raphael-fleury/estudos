@@ -96,3 +96,27 @@ O **IDS (Sistema de Detecção de Intrusão)** e o **IPS (Sistema de Prevenção
 - **Como funciona:** atua de forma ativa e fica posicionado *inline*, no caminho direto do tráfego. Todo o tráfego passa por ele para ser inspecionado em tempo real.
 - **Ação:** além de detectar ameaças, pode bloquear ou descartar pacotes e encerrar conexões para impedir um ataque.
 - **Vantagem:** pode evitar invasões de forma proativa. Como analisa o tráfego em linha, pode introduzir uma pequena latência na rede.
+
+### DLP (Data Loss Prevention)
+
+O **DLP (Prevenção contra Perda de Dados)** é uma estratégia e um conjunto de soluções de segurança voltados a identificar, monitorar e proteger informações confidenciais contra vazamento, exposição ou uso indevido. As ferramentas podem classificar dados por padrões, conteúdo ou contexto e aplicar políticas conforme o tipo de informação e a ação realizada.
+
+#### Como funciona
+
+1. **Identificação e classificação:** localiza e classifica dados sensíveis, como documentos estratégicos, propriedade intelectual, números de identificação pessoal e dados de cartões de crédito.
+2. **Monitoramento:** acompanha o uso e a movimentação das informações, como envio por e-mail, uploads, downloads, cópias para mídias removíveis e compartilhamentos.
+3. **Proteção e resposta:** conforme as regras configuradas, pode alertar o usuário ou a equipe de segurança, restringir o compartilhamento, criptografar o conteúdo ou bloquear a ação.
+
+#### Principais tipos
+
+- **Network DLP (rede):** monitora dados em trânsito na rede corporativa, incluindo tráfego de e-mail e uploads.
+- **Endpoint DLP (ponto de extremidade):** aplica políticas em computadores e dispositivos gerenciados, controlando ações como cópia para mídias removíveis ou transferência de arquivos.
+- **Cloud DLP (nuvem):** identifica e protege informações armazenadas ou compartilhadas em serviços de nuvem e SaaS.
+
+#### Objetivos
+
+- Reduzir vazamentos acidentais, como o envio de um relatório confidencial ao destinatário errado ou o compartilhamento de informações em serviços não autorizados.
+- Ajudar a detectar e impedir usos indevidos por pessoas com acesso legítimo, inclusive ameaças internas.
+- Apoiar o cumprimento de leis e normas de proteção de dados, como a LGPD no Brasil e o GDPR na União Europeia.
+
+A eficácia do DLP depende da classificação correta dos dados, de políticas bem definidas e de ajustes que reduzam bloqueios indevidos. Ele complementa, mas não substitui, controles de acesso, treinamento e governança de dados.
