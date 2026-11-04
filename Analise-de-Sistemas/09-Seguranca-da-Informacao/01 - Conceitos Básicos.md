@@ -152,3 +152,20 @@ O **SIEM (Gerenciamento de Informações e Eventos de Segurança)** é uma plata
 - **Apoio à conformidade:** contribui para demonstrar controles e manter registros conforme políticas e requisitos aplicáveis, como os relacionados à LGPD, PCI DSS e HIPAA. A conformidade depende também da configuração, da retenção adequada e dos demais controles da organização.
 
 O SIEM apoia a detecção e a investigação, mas não bloqueia necessariamente ameaças por conta própria. A resposta pode depender da análise da equipe e de integrações com ferramentas de automação e proteção.
+
+### Antivírus
+
+O **antivírus** é um software de segurança que procura detectar, bloquear e, quando possível, remover ou colocar em quarentena códigos maliciosos, como vírus, trojans, worms, spyware e ransomware. Pode proteger dispositivos pessoais ou ser gerenciado centralmente em ambientes corporativos.
+
+#### Como funciona
+
+- **Assinaturas:** compara arquivos e códigos com padrões de ameaças conhecidas. A eficácia depende de manter as definições atualizadas.
+- **Análise heurística e comportamental:** examina características e ações de programas para identificar atividades suspeitas, inclusive de ameaças ainda não catalogadas. Isso pode ajudar a detectar ameaças novas, mas não garante identificar todos os ataques ou *zero-days*.
+- **Proteção em tempo real:** monitora atividades como execução de arquivos, downloads e anexos, podendo bloquear ou sinalizar itens suspeitos antes que causem danos.
+- **Verificações sob demanda:** permite examinar arquivos, pastas ou dispositivos em busca de ameaças.
+
+#### Ações e recursos
+
+Quando identifica uma ameaça, o antivírus pode bloquear sua execução, tentar limpar o arquivo ou isolá-lo em quarentena para impedir que interaja com o restante do sistema. Alguns produtos também oferecem recursos adicionais, como proteção contra phishing, firewall ou controle parental; esses recursos variam conforme a solução.
+
+As soluções corporativas permitem administrar a proteção de vários dispositivos por meio de políticas centralizadas. O antivírus é uma camada importante de defesa, mas deve ser mantido atualizado e combinado com controles como atualizações de segurança, cópias de segurança e práticas seguras de uso.
