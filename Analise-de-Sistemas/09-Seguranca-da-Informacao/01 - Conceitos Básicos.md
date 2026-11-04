@@ -169,3 +169,21 @@ O **antivírus** é um software de segurança que procura detectar, bloquear e, 
 Quando identifica uma ameaça, o antivírus pode bloquear sua execução, tentar limpar o arquivo ou isolá-lo em quarentena para impedir que interaja com o restante do sistema. Alguns produtos também oferecem recursos adicionais, como proteção contra phishing, firewall ou controle parental; esses recursos variam conforme a solução.
 
 As soluções corporativas permitem administrar a proteção de vários dispositivos por meio de políticas centralizadas. O antivírus é uma camada importante de defesa, mas deve ser mantido atualizado e combinado com controles como atualizações de segurança, cópias de segurança e práticas seguras de uso.
+
+### EDR (Endpoint Detection and Response)
+
+O **EDR (Detecção e Resposta de Ponto de Extremidade)** é uma solução de segurança que monitora continuamente endpoints — como computadores, notebooks, dispositivos móveis e servidores — para identificar, investigar e ajudar a conter ameaças.
+
+#### Principais funções
+
+- **Monitoramento contínuo:** coleta informações sobre atividades nos dispositivos, como processos executados, alterações em arquivos e conexões de rede.
+- **Detecção comportamental:** analisa sinais de atividade suspeita que podem indicar ameaças, inclusive comportamentos associados a ransomware ou movimentação lateral.
+- **Investigação:** apresenta eventos e contexto sobre atividades detectadas, ajudando a equipe de segurança a entender a sequência e o possível alcance de um incidente.
+- **Resposta:** conforme a solução e as políticas configuradas, permite ações manuais ou automatizadas, como isolar um dispositivo da rede, encerrar um processo ou colocar arquivos em quarentena.
+
+#### EDR vs. Antivírus Tradicional (EPP)
+
+- **Antivírus e EPP (Endpoint Protection Platform):** concentram-se em prevenir ameaças, usando recursos como assinaturas e análise comportamental para bloquear atividades maliciosas.
+- **EDR:** acrescenta recursos de monitoramento, detecção, investigação e resposta a incidentes nos endpoints.
+
+Essas capacidades podem coexistir em uma mesma plataforma. O EDR complementa a prevenção, mas não garante que toda ameaça seja detectada ou contida; sua eficácia depende da cobertura dos dispositivos, das políticas e da resposta da equipe.
