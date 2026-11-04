@@ -209,3 +209,17 @@ O **WAF (Web Application Firewall ou Firewall de Aplicativo Web)** é uma soluç
 - **Exploração de vulnerabilidades e bots maliciosos:** solicitações automatizadas ou suspeitas dirigidas à aplicação.
 
 Um WAF complementa, mas não substitui, práticas de desenvolvimento seguro, correção de vulnerabilidades e outros controles de segurança. Sua eficácia depende das regras, da configuração e da atualização contínua.
+
+### Gestão de vulnerabilidades
+
+A **gestão de vulnerabilidades** é o processo contínuo e estruturado de identificar, avaliar, priorizar, corrigir e monitorar falhas de segurança em sistemas, redes, softwares e infraestruturas antes que agentes maliciosos consigam explorá-las.
+
+O objetivo principal é reduzir a **janela de exposição** — o tempo entre a descoberta de uma falha e a sua correção — e diminuir a superfície de ataque da organização.
+
+#### Principais etapas do ciclo de vida
+
+1. **Descoberta e inventário:** mapear os ativos da organização, incluindo hardware, softwares, recursos em nuvem, contêineres e dispositivos, para saber o que precisa ser protegido.
+2. **Avaliação e categorização:** utilizar scanners de vulnerabilidade e referências padronizadas, como CVE, NVD e pontuações CVSS, para identificar e avaliar as falhas encontradas.
+3. **Priorização baseada em risco (RBVM):** priorizar as correções conforme o risco real para o negócio, em vez de tentar corrigir todas as falhas ao mesmo tempo. Métricas como EPSS, que estima a probabilidade de exploração, e KEV, que identifica vulnerabilidades exploradas ativamente, podem apoiar essa decisão.
+4. **Resolução ou remediação:** aplicar patches (atualizações), corrigir configurações ou implementar mitigações temporárias.
+5. **Reavaliação e relatório:** realizar novas varreduras para confirmar se as falhas foram eliminadas e acompanhar indicadores de desempenho, como o MTTR (tempo médio de resolução).
