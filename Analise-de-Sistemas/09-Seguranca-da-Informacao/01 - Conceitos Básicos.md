@@ -32,7 +32,7 @@ Controles comuns incluem:
 
 Um controle isolado não é suficiente. Por exemplo, uma sala de servidores pode ter acesso físico restrito, mas ainda precisa de contas individuais, permissões adequadas e monitoramento dos sistemas. Da mesma forma, controles digitais não impedem que um equipamento desprotegido seja furtado ou danificado. A combinação de medidas físicas e lógicas reduz riscos e contribui para a continuidade dos serviços.
 
-## 2. Operação de segurança (Firewall, Proxy, IPS/IDS, DLP, CASB, SIEM, Antivírus, EDR, WAF, Gestão de vulnerabilidades, Monitoração, Backup)
+## 2. Operações e métodos de segurança
 
 ### Firewall
 
@@ -223,3 +223,39 @@ O objetivo principal é reduzir a **janela de exposição** — o tempo entre a 
 3. **Priorização baseada em risco (RBVM):** priorizar as correções conforme o risco real para o negócio, em vez de tentar corrigir todas as falhas ao mesmo tempo. Métricas como EPSS, que estima a probabilidade de exploração, e KEV, que identifica vulnerabilidades exploradas ativamente, podem apoiar essa decisão.
 4. **Resolução ou remediação:** aplicar patches (atualizações), corrigir configurações ou implementar mitigações temporárias.
 5. **Reavaliação e relatório:** realizar novas varreduras para confirmar se as falhas foram eliminadas e acompanhar indicadores de desempenho, como o MTTR (tempo médio de resolução).
+
+### Monitoramento de segurança da informação
+
+O **monitoramento de segurança da informação** é a observação contínua de redes, sistemas, servidores e comportamentos digitais para identificar ameaças, vulnerabilidades e atividades suspeitas em tempo hábil.
+
+#### O que envolve o monitoramento?
+
+- **Análise de logs e eventos:** registrar e processar dados sobre quem acessou quais recursos, quando e de onde.
+- **Visibilidade do ambiente:** identificar falhas de configuração, tráfego anômalo e tentativas de ataque, como phishing ou disseminação de malware.
+- **Detecção precoce:** alertar rapidamente as equipes de TI ou os Centros de Operações de Segurança (SOC), para que possam agir antes que um incidente cause danos graves.
+- **Conformidade regulatória:** apoiar o cumprimento de requisitos legais e regulatórios, incluindo os relacionados à proteção de dados, como a LGPD.
+
+### Backup (cópia de segurança)
+
+O **backup** é o processo de criar cópias de segurança de arquivos, sistemas ou bancos de dados e armazená-las separadamente dos dados originais. É um pilar da segurança da informação, pois ajuda a recuperar dados após falhas de hardware, erros humanos, ataques como ransomware ou desastres naturais.
+
+#### Estratégia 3-2-1
+
+Uma prática recomendada para aumentar a resiliência dos backups é a estratégia 3-2-1:
+
+- **3 cópias:** mantenha pelo menos três cópias dos dados, contando a original e duas cópias de segurança.
+- **2 tipos de mídia:** armazene as cópias em pelo menos dois tipos de mídia ou sistemas diferentes, como armazenamento local e nuvem.
+- **1 cópia fora do local:** mantenha pelo menos uma cópia em uma localização física ou lógica separada, que pode ser um serviço em nuvem.
+
+#### Tipos de backup
+
+- **Completo (full):** copia todos os dados selecionados. É simples de restaurar, mas normalmente exige mais tempo e espaço de armazenamento.
+- **Incremental:** copia os dados alterados ou criados desde o backup anterior, seja ele completo ou incremental. Costuma ser rápido e ocupar menos espaço, mas a restauração pode exigir o backup completo e vários incrementais.
+- **Diferencial:** copia os dados alterados ou criados desde o último backup completo. Em geral, ocupa mais espaço que o incremental, mas a restauração requer o backup completo e o diferencial mais recente.
+
+#### Boas práticas de segurança
+
+- **Criptografia:** proteja os backups com criptografia para reduzir o risco de exposição caso a mídia seja perdida, roubada ou acessada indevidamente.
+- **Isolamento:** mantenha algumas cópias desconectadas da rede principal ou protegidas contra alterações, para dificultar que um ransomware também as comprometa.
+- **Testes de restauração:** teste periodicamente a recuperação dos dados para verificar se as cópias estão íntegras e se podem ser restauradas dentro do tempo necessário.
+- **Controle de acesso:** restrinja e monitore quem pode acessar, alterar ou excluir os backups.
