@@ -138,3 +138,17 @@ O **CASB (Agente de Segurança de Acesso à Nuvem)** é uma solução que aplica
 - **Baseado em API:** integra-se às APIs dos provedores de nuvem para avaliar dados e atividades nos serviços conectados, incluindo dados armazenados (*at rest*). A cobertura e a possibilidade de remediação dependem das APIs e permissões concedidas.
 
 Os modelos inline e baseado em API podem ser usados em conjunto. O CASB complementa controles como DLP e gestão de identidade, mas não substitui a configuração segura dos serviços em nuvem nem a governança de acesso.
+
+### SIEM (Security Information and Event Management)
+
+O **SIEM (Gerenciamento de Informações e Eventos de Segurança)** é uma plataforma que reúne e analisa registros e eventos de segurança de diferentes componentes da infraestrutura de TI. Ao centralizar essas informações, ajuda as equipes de segurança a identificar incidentes e investigar atividades suspeitas.
+
+#### Principais funções
+
+- **Coleta centralizada:** agrega logs e eventos de fontes como firewalls, servidores, roteadores, estações de trabalho e aplicações.
+- **Correlação de eventos:** relaciona informações de diferentes fontes para identificar padrões suspeitos que poderiam passar despercebidos quando cada evento é analisado isoladamente.
+- **Detecção e alertas:** aplica regras e análises para sinalizar possíveis ameaças e encaminhar alertas à equipe de segurança ou ao SOC (*Security Operations Center*).
+- **Investigação e auditoria:** facilita a consulta de eventos e a produção de relatórios que podem apoiar investigações e auditorias.
+- **Apoio à conformidade:** contribui para demonstrar controles e manter registros conforme políticas e requisitos aplicáveis, como os relacionados à LGPD, PCI DSS e HIPAA. A conformidade depende também da configuração, da retenção adequada e dos demais controles da organização.
+
+O SIEM apoia a detecção e a investigação, mas não bloqueia necessariamente ameaças por conta própria. A resposta pode depender da análise da equipe e de integrações com ferramentas de automação e proteção.
