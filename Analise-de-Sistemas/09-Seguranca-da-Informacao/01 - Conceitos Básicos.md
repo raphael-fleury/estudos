@@ -120,3 +120,21 @@ O **DLP (Prevenção contra Perda de Dados)** é uma estratégia e um conjunto d
 - Apoiar o cumprimento de leis e normas de proteção de dados, como a LGPD no Brasil e o GDPR na União Europeia.
 
 A eficácia do DLP depende da classificação correta dos dados, de políticas bem definidas e de ajustes que reduzam bloqueios indevidos. Ele complementa, mas não substitui, controles de acesso, treinamento e governança de dados.
+
+### CASB (Cloud Access Security Broker)
+
+O **CASB (Agente de Segurança de Acesso à Nuvem)** é uma solução que aplica políticas de segurança entre os usuários de uma organização e os serviços em nuvem. Ele amplia a visibilidade e o controle sobre o uso desses serviços, inclusive os que não foram aprovados formalmente pela equipe de TI (*Shadow IT*).
+
+#### Principais funções
+
+- **Visibilidade:** identifica os aplicativos em nuvem utilizados na organização e ajuda a avaliar riscos associados ao *Shadow IT*.
+- **Segurança de dados:** aplica políticas de DLP, criptografia e controle de compartilhamento, conforme os recursos disponíveis e a integração configurada.
+- **Proteção contra ameaças:** pode identificar atividades suspeitas e ajudar a bloquear malware ou outras ações de risco.
+- **Conformidade:** oferece controles, registros e relatórios que apoiam auditorias e o cumprimento de requisitos como os da LGPD e do GDPR.
+
+#### Modelos de implantação
+
+- **Inline (proxy de encaminhamento ou reverso):** inspeciona e aplica políticas ao tráfego entre usuários e serviços em nuvem em tempo real. O efeito depende de como o tráfego é encaminhado pelo CASB.
+- **Baseado em API:** integra-se às APIs dos provedores de nuvem para avaliar dados e atividades nos serviços conectados, incluindo dados armazenados (*at rest*). A cobertura e a possibilidade de remediação dependem das APIs e permissões concedidas.
+
+Os modelos inline e baseado em API podem ser usados em conjunto. O CASB complementa controles como DLP e gestão de identidade, mas não substitui a configuração segura dos serviços em nuvem nem a governança de acesso.
