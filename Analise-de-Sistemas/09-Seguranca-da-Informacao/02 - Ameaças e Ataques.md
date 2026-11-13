@@ -75,3 +75,53 @@ Cross-Site Request Forgery (CSRF) é um tipo de ataque em que um site malicioso 
 ### Path Traversal
 
 O Path Traversal (também conhecido como *Directory Traversal* ou ataque ponto-ponto-barra) é uma vulnerabilidade de segurança que permite a invasores ler arquivos e diretórios confidenciais armazenados fora da pasta raiz da aplicação web.
+
+### Phishing e Spearphishing
+
+**Phishing** é um ataque de engenharia social em que o atacante envia mensagens (geralmente emails) fingindo ser de uma fonte confiável para enganar o usuário e fazer com que revele informações sensíveis (como senhas, dados bancários ou números de cartão de crédito).
+
+**Spearphishing** é uma variante mais direcionada que visa indivíduos ou organizações específicas, personalizando a mensagem com informações sobre a vítima para aumentar a credibilidade do ataque.
+
+### Man-in-the-Middle (MitM)
+
+Um atacante se posiciona entre dois pontos de comunicação (cliente e servidor) e intercepta, observa ou altera dados em trânsito. Pode capturar credenciais, dados sensíveis, ou injetar conteúdo malicioso. Frequentemente explorado em redes Wi-Fi públicas desprotegidas.
+
+### Brute Force
+
+Ataque que tenta descobrir uma senha, chave de criptografia ou token através de tentativas sistemáticas e repetidas até encontrar a combinação correta. É particularmente eficaz contra senhas fracas e pode ser automatizado para testar milhões de possibilidades rapidamente.
+
+### Privilege Escalation
+
+Técnica na qual um atacante com acesso limitado a um sistema consegue elevar seus privilégios para obter acesso de nível administrativo ou de root. Explora vulnerabilidades no sistema operacional ou aplicações para executar com permissões maiores.
+
+### Zero-Day Exploit
+
+Exploração de uma vulnerabilidade de segurança desconhecida pelos proprietários do software (ainda não há um patch disponível). O atacante possui conhecimento exclusivo da falha e pode explorá-la livremente até que o desenvolvedor publique uma correção.
+
+### Social Engineering
+
+Técnica de manipulação psicológica que tira proveito da natureza humana para enganar pessoas e obter acesso a informações sensíveis, sistemas ou edifícios. Pode envolver pretexto, engano emocional ou exploração da confiança entre indivíduos.
+
+### API Abuse
+
+Uso malicioso de Application Programming Interfaces (APIs) para extrair dados em massa, derrubar serviços através de requisições excessivas, ou contornar controles de segurança. Frequentemente realizado através de automação para escalar a taxa de requisições.
+
+### Race Condition
+
+Vulnerabilidade que ocorre quando o resultado de uma operação depende da sequência ou timing de eventos não sincronizados. Um atacante pode explorar o período entre duas operações para executar código malicioso ou acessar dados em estado inconsistente.
+
+### XXE (XML External Entity)
+
+Vulnerabilidade que permite injetar entidades XML maliciosas em uma aplicação que processa XML. Pode levar ao roubo de dados confidenciais, acesso a arquivos internos, ou ataques de negação de serviço (DoS).
+
+### Insecure Deserialization
+
+Vulnerabilidade que ocorre quando uma aplicação desserializa dados não confiáveis sem validação adequada. Um atacante pode enviar dados serializados maliciosos que executam código arbitrário no sistema quando desserializados.
+
+### SSRF (Server-Side Request Forgery)
+
+Vulnerabilidade que permite a um atacante fazer o servidor executar requisições HTTP não autorizadas em seu nome. Pode ser usado para acessar sistemas internos, fazer requests a URLs privadas, ou contornar firewalls internos da aplicação.
+
+### LDAP Injection
+
+Semelhante à SQL Injection, permite a injeção de comandos LDAP maliciosos em campos de entrada. Explorada contra sistemas que usam LDAP para autenticação, pode permitir bypass de autenticação ou extração de informações sensíveis.
