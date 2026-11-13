@@ -34,6 +34,26 @@ Projetado para se infiltrar em computadores, celulares ou tablets sem o consenti
 
 Por operarem em níveis profundos do sistema (muitas vezes no kernel), muitos antivírus tradicionais têm dificuldade para localizá-los.
 
+### Botnet
+
+Rede de computadores infectados que são controlados remotamente por um atacante (denominado "bot master"). Os computadores infectados são conhecidos como "bots" ou "zumbis" e podem ser coordenados para executar ações maliciosas em massa, como enviar spam, realizar ataques DDoS ou roubar dados.
+
+### Adware
+
+Software que exibe propagandas indesejadas, frequentemente de forma agressiva e intrusiva. Além disso, coleta dados de navegação e hábitos de navegação do usuário para fins de marketing direcionado. Geralmente é distribuído junto com outros softwares aparentemente legítimos.
+
+### Cryptojacking
+
+Malware que se infiltra em computadores ou dispositivos móveis e utiliza seus recursos de processamento (CPU, GPU) para minerar criptomoedas (como Bitcoin ou Monero) sem o conhecimento ou consentimento do usuário. Consome recursos do sistema e degrada o desempenho.
+
+### PUPs (Potentially Unwanted Programs)
+
+Programas potencialmente indesejados que não são necessariamente maliciosos, mas são instalados sem consentimento explícito do usuário, frequentemente em conjunto com software legítimo. Incluem barras de ferramentas não solicitadas, extensões de navegador e modificadores de página inicial.
+
+### Fileless Malware
+
+Malware sofisticado que funciona apenas na memória RAM do sistema, sem deixar arquivos em disco rígido. Isso o torna mais difícil de detectar pelos antivírus tradicionais, pois não deixa rastros permanentes e desaparece ao reiniciar o computador. Frequentemente explora funcionalidades legítimas do sistema operacional.
+
 ## 2. Ataques
 
 ### DDoS
