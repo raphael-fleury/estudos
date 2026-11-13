@@ -34,4 +34,24 @@ Projetado para se infiltrar em computadores, celulares ou tablets sem o consenti
 
 Por operarem em níveis profundos do sistema (muitas vezes no kernel), muitos antivírus tradicionais têm dificuldade para localizá-los.
 
-## 2. Ataques (DDoS, SQL Injection, XSS, CSRF, Path Traversal etc.)
+## 2. Ataques
+
+### DDoS
+
+Um ataque DDoS (*Distributed Denial of Service*, ou **Ataque Distribuído de Negação de Serviço**) é uma tentativa maliciosa de derrubar um site, servidor ou serviço online, sobrecarregando-o com um volume excessivo de acessos e solicitações
+
+### SQL Injection
+
+Explora vulnerabilidades no código de um aplicativo inserindo uma consulta SQL em campos regulares de entrada ou formulário.
+
+### XSS
+
+O Cross-Site Scripting (XSS) é uma vulnerabilidade de segurança em aplicações web que permite a invasores injetar códigos maliciosos (geralmente JavaScript) em páginas vistas por outros usuários. O navegador da vítima executa esse script confiando que ele pertence ao site legítimo, o que pode resultar no roubo de cookies, sessões ou dados sensíveis.
+
+### CSRF
+
+Cross-Site Request Forgery (CSRF) é um tipo de ataque em que um site malicioso faz com que o navegador de um usuário autenticado execute ações indesejadas em outra aplicação web na qual ele está logado (como fazer uma transferência bancária ou alterar uma senha).
+
+### Path Traversal
+
+O Path Traversal (também conhecido como *Directory Traversal* ou ataque ponto-ponto-barra) é uma vulnerabilidade de segurança que permite a invasores ler arquivos e diretórios confidenciais armazenados fora da pasta raiz da aplicação web.
