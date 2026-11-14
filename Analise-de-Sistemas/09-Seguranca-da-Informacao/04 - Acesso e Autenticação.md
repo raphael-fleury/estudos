@@ -96,3 +96,23 @@ Na etapa de autorização, modelos estruturados ajudam a gerenciar permissões e
 | **Contexto em tempo real** | Por padrão, não considera fatores externos como horário, localização ou dispositivo; pode ser combinado com outros controles. | Pode avaliar o contexto da solicitação, como permitir acesso apenas em horário comercial e na rede interna. |
 | **Complexidade** | Mais simples de implementar e administrar em estruturas organizacionais estáveis. | Mais complexo de projetar e exige governança rigorosa dos atributos e de sua atualização. |
 | **Principal desafio** | **Explosão de papéis** (*role explosion*): criação excessiva de papéis para atender a exceções. | Manutenção de políticas complexas e dependência de atributos corretos e atualizados. |
+
+### RBAC (*Role-Based Access Control*)
+
+O **RBAC (Controle de Acesso Baseado em Funções)** restringe o acesso aos recursos conforme as funções atribuídas aos usuários na organização, em vez de configurar permissões individualmente para cada pessoa. O administrador define as permissões de cada função e atribui os usuários às funções adequadas.
+
+#### Componentes principais
+
+- **Usuário:** pessoa ou entidade que precisa acessar o sistema.
+- **Função (*role*):** conjunto de responsabilidades e permissões, como Financeiro, RH ou Suporte.
+- **Permissão:** autorização para executar uma ação específica, como ler, criar, editar ou excluir um arquivo.
+- **Sessão:** contexto de acesso ativo em que o usuário utiliza uma ou mais de suas funções.
+
+#### Vantagens para a segurança
+
+- **Princípio do privilégio mínimo:** facilita conceder apenas as permissões necessárias ao trabalho, desde que as funções sejam bem definidas e revisadas.
+- **Limitação do impacto de uma conta comprometida:** restringir cada função ao acesso necessário pode reduzir os recursos disponíveis a um invasor que comprometa uma conta.
+- **Facilidade de gestão:** mudanças de cargo ou desligamentos podem ser tratados ajustando ou removendo as funções atribuídas, em vez de alterar permissões uma a uma.
+- **Conformidade e auditoria:** a associação entre usuários, funções e permissões facilita verificar quem pode acessar cada recurso.
+
+
