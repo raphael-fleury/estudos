@@ -115,4 +115,23 @@ O **RBAC (Controle de Acesso Baseado em Funções)** restringe o acesso aos recu
 - **Facilidade de gestão:** mudanças de cargo ou desligamentos podem ser tratados ajustando ou removendo as funções atribuídas, em vez de alterar permissões uma a uma.
 - **Conformidade e auditoria:** a associação entre usuários, funções e permissões facilita verificar quem pode acessar cada recurso.
 
+### ABAC (*Attribute-Based Access Control*)
+
+O **ABAC (Controle de Acesso Baseado em Atributos)** é um modelo de autorização que concede ou nega acesso a recursos com base na combinação de atributos e condições dinâmicas, em vez de depender apenas de papéis fixos, como no RBAC. Uma política avalia as condições da solicitação e decide se a ação é permitida.
+
+#### Componentes principais
+
+As decisões de acesso podem combinar quatro categorias de atributos:
+
+1. **Sujeito (usuário):** quem está tentando acessar, como cargo, departamento, nível de liberação ou identificador.
+2. **Recurso (objeto):** o que está sendo acessado, como tipo de arquivo, proprietário, data de criação ou nível de confidencialidade.
+3. **Ação:** o que o usuário pretende fazer, como ler, escrever, editar ou excluir.
+4. **Ambiente:** o contexto da solicitação, como horário, localização ou IP, tipo de dispositivo e rede segura ou pública.
+
+#### Exemplo prático
+
+> Permitir que um funcionário do departamento financeiro edite planilhas de folha de pagamento somente quando estiver na rede corporativa e durante o horário comercial, das 9h às 18h.
+
+Nesse caso, a política verifica o departamento do usuário, a ação solicitada, o recurso, a rede e o horário antes de permitir ou negar o acesso.
+
 
