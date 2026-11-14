@@ -32,5 +32,26 @@ Uma **VPN (Rede Privada Virtual)** cria um túnel criptografado entre um disposi
 - SOTI MobiControl
 
 ## 3. SSO
+
+**Single Sign-On (SSO)** é um método de autenticação que permite ao usuário fazer login uma vez e obter acesso a vários aplicativos e sistemas conectados, sem precisar inserir as credenciais novamente em cada um.
+
+### Como funciona
+
+1. **Provedor de Identidade (*Identity Provider*, IdP):** sistema central, como Microsoft Entra ID, Okta ou Keycloak, que autentica o usuário e emite informações sobre sua identidade.
+2. **Provedor de Serviço (*Service Provider*, SP):** aplicativo ou site que o usuário deseja acessar, como Slack, e-mail corporativo ou Salesforce.
+3. **Troca de informações de autenticação:** após o login no IdP, o usuário recebe uma resposta ou token de autenticação que o aplicativo pode validar. A troca pode usar SAML ou OpenID Connect; OAuth 2.0 é principalmente um protocolo de autorização e costuma ser combinado com OpenID Connect para autenticação.
+
+### Benefícios para a Segurança da Informação
+
+- **Redução da fadiga de senhas:** diminui a necessidade de criar e lembrar dezenas de senhas, reduzindo a tentação de reutilizá-las.
+- **Menos chamados de suporte:** pode reduzir pedidos de redefinição de senha ao departamento de TI ou *Help Desk*.
+- **Gestão centralizada de acessos:** facilita conceder ou revogar acessos aos sistemas conectados, por exemplo, quando um funcionário deixa a empresa. A revogação efetiva também depende da configuração das sessões e dos aplicativos.
+- **Integração com MFA (Autenticação Multifator):** permite exigir MFA no IdP durante o login e aplicar essa proteção aos aplicativos integrados ao SSO.
+
+### Riscos e cuidados
+
+- **Ponto único de falha:** se a conta do IdP for comprometida, os sistemas vinculados podem ficar expostos.
+- **Mitigação:** exigir MFA resistente a phishing sempre que possível, aplicar políticas de acesso condicional e monitorar continuamente logins e sessões.
+
 ## 4. MFA
 ## 5. Gestão de Identidade e acesso (autenticação, autorização e auditoria), RBAC e ABAC
