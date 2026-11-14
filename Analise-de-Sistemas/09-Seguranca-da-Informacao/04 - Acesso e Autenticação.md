@@ -54,4 +54,23 @@ Uma **VPN (Rede Privada Virtual)** cria um túnel criptografado entre um disposi
 - **Mitigação:** exigir MFA resistente a phishing sempre que possível, aplicar políticas de acesso condicional e monitorar continuamente logins e sessões.
 
 ## 4. MFA
+
+**MFA (Autenticação Multifator)** é um processo de segurança que exige duas ou mais formas diferentes de verificação para confirmar a identidade de um usuário antes de liberar o acesso a um sistema, conta ou aplicativo. Para ser multifator, as verificações devem pertencer a categorias distintas.
+
+### Como funciona
+
+A autenticação combina fatores de diferentes categorias:
+
+- **Algo que você sabe:** senha, PIN ou resposta a uma pergunta secreta.
+- **Algo que você tem:** smartphone com aplicativo autenticador, token físico, chave de segurança ou código enviado por SMS.
+- **Algo que você é:** característica biométrica, como impressão digital, reconhecimento facial ou leitura de íris.
+
+> **Atenção:** códigos por SMS podem ser vulneráveis a golpes de troca de chip e interceptação. Sempre que possível, prefira chaves de segurança ou outros métodos resistentes a phishing.
+
+### Importância da MFA
+
+- **Proteção contra roubo de senhas:** uma senha comprometida, por phishing ou vazamento, não costuma ser suficiente para acessar a conta quando um segundo fator é exigido.
+- **Redução de riscos:** dificulta muitas tentativas automatizadas e ataques de força bruta, mas não elimina todos os riscos, especialmente quando o próprio segundo fator pode ser enganado ou roubado.
+- **Camadas de defesa:** adiciona uma barreira de segurança recomendada em políticas corporativas e boas práticas de proteção de dados.
+
 ## 5. Gestão de Identidade e acesso (autenticação, autorização e auditoria), RBAC e ABAC
