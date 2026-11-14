@@ -74,3 +74,25 @@ A autenticação combina fatores de diferentes categorias:
 - **Camadas de defesa:** adiciona uma barreira de segurança recomendada em políticas corporativas e boas práticas de proteção de dados.
 
 ## 5. Gestão de Identidade e acesso (autenticação, autorização e auditoria), RBAC e ABAC
+
+A **Gestão de Identidade e Acesso (IAM — *Identity and Access Management*)** reúne políticas e tecnologias para garantir que as pessoas certas tenham acesso aos recursos adequados, no momento e pelos motivos apropriados. Ela organiza o ciclo de vida das identidades e os privilégios associados, apoiando-se nos três pilares operacionais conhecidos como **AAA** e em modelos de controle de acesso, como RBAC e ABAC.
+
+### Os três pilares do acesso (AAA)
+
+O AAA divide o controle de acesso em três funções complementares:
+
+1. **Autenticação (*Authentication*):** verifica a identidade declarada pelo usuário, por exemplo, com senha, MFA ou biometria.
+2. **Autorização (*Authorization*):** determina quais recursos e ações a identidade autenticada pode acessar, conforme as permissões e políticas aplicáveis.
+3. **Auditoria (*Accounting*):** registra atividades e eventos de acesso, permitindo rastreabilidade, análise e investigação. Nesse contexto, *accounting* refere-se ao registro de uso, não necessariamente à cobrança.
+
+### Modelos de controle de acesso: RBAC e ABAC
+
+Na etapa de autorização, modelos estruturados ajudam a gerenciar permissões em escala. Os dois principais são RBAC e ABAC:
+
+| Critério | RBAC (*Role-Based Access Control*) | ABAC (*Attribute-Based Access Control*) |
+| --- | --- | --- |
+| **Base da decisão** | Papéis ou funções atribuídos ao usuário, como gerente, analista ou administrador. | Atributos do usuário, do recurso, da ação e do ambiente. |
+| **Granularidade** | Em geral, média ou baixa: permissões agrupadas em papéis predefinidos. | Alta: permite regras específicas e contextuais. |
+| **Contexto em tempo real** | Por padrão, não considera fatores externos como horário, localização ou dispositivo; pode ser combinado com outros controles. | Pode avaliar o contexto da solicitação, como permitir acesso apenas em horário comercial e na rede interna. |
+| **Complexidade** | Mais simples de implementar e administrar em estruturas organizacionais estáveis. | Mais complexo de projetar e exige governança rigorosa dos atributos e de sua atualização. |
+| **Principal desafio** | **Explosão de papéis** (*role explosion*): criação excessiva de papéis para atender a exceções. | Manutenção de políticas complexas e dependência de atributos corretos e atualizados. |
